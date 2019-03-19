@@ -182,7 +182,7 @@
 			"lineNumbers.relative": "将行号显示为与光标相隔的行数。",
 			"lineNumbers.interval": "每 10 行显示一次行号。",
 			"lineNumbers": "控制行号的显示。",
-			"renderFinalNewline": "当文件以换行符结束时, 呈现最后一行的行号。",
+			"renderFinalNewline": "当文件以换行符结束时，呈现最后一行的行号。",
 			"rulers": "在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。",
 			"wordSeparators": "执行单词相关的导航或操作时作为单词分隔符的字符。",
 			"tabSize": "一个制表符等于的空格数。在 `#editor.detectIndentation#` 启用时，根据文件内容，该设置可能会被覆盖。",
@@ -203,7 +203,7 @@
 			"find.seedSearchStringFromSelection": "控制是否将编辑器选中内容作为搜索词填入到查找小组件中。",
 			"find.autoFindInSelection": "在执行查找操作时，在编辑器中的选中文本中还是整个文件中进行查找。",
 			"find.globalFindClipboard": "控制“查找”小组件是否读取或修改 macOS 的共享查找剪贴板。",
-			"find.addExtraSpaceOnTop": "控制 \"查找小部件\" 是否应在编辑器顶部添加额外的行。如果为 true, 则可以在 \"查找小工具\" 可见时滚动到第一行之外。",
+			"find.addExtraSpaceOnTop": "控制 \"查找小部件\" 是否应在编辑器顶部添加额外的行。如果为 true，则可以在 \"查找小工具\" 可见时滚动到第一行之外。",
 			"wordWrap.off": "永不换行。",
 			"wordWrap.on": "将在视区宽度处换行。",
 			"wordWrap.wordWrapColumn": "在 `#editor.wordWrapColumn#` 处折行。",
@@ -768,7 +768,7 @@
 			"openModeModifier": "控制在树和列表中怎样使用鼠标来展开子项(若支持)。对于树中的父节点，此设置将控制是使用单击还是双击来展开。注意，某些不适用于此设置的树或列表可能会忽略此项。",
 			"horizontalScrolling setting": "控制列表和树是否支持在工作台中进行水平滚动。",
 			"tree horizontalScrolling setting": "控制工作台中的树控件是否支持水平滚动。",
-			"deprecated": "此设置已弃用, 请改用 \"{0}\"。",
+			"deprecated": "此设置已弃用，请改用 \"{0}\"。",
 			"tree indent setting": "控制树缩进(以像素为单位)。",
 			"keyboardNavigationSettingKey.simple": "简单键盘导航聚焦与键盘输入相匹配的元素。仅对前缀进行匹配。",
 			"keyboardNavigationSettingKey.highlight": "高亮键盘导航会突出显示与键盘输入相匹配的元素。进一步向上和向下导航将仅遍历突出显示的元素。",
@@ -887,7 +887,7 @@
 			"config.property.duplicate": "无法注册“{0}”。此属性已注册。"
 		},
 		"vs/platform/extensions/node/extensionValidator": {
-			"versionSyntax": "无法解析 \"engines.vscode\" 的值 {0}。请改为如 ^1.22.0, ^1.22.x 等。",
+			"versionSyntax": "无法解析 \"engines.vscode\" 的值 {0}。请改为如 ^1.22.0，^1.22.x 等。",
 			"versionSpecificity1": "\"engines.vscode\" ({0})中指定的版本不够具体。对于 1.0.0 之前的 vscode 版本，请至少定义主要和次要想要的版本。例如: ^0.10.0、0.10.x、0.11.0 等。",
 			"versionSpecificity2": "\"engines.vscode\" ({0})中指定的版本不够具体。对于 1.0.0 之后的 vscode 版本，请至少定义主要想要的版本。例如: ^1.10.0、1.10.x、1.x.x、2.x.x 等。",
 			"versionMismatch": "扩展与 Code {0} 不兼容。扩展需要: {1}。"
@@ -901,7 +901,7 @@
 		},
 		"vs/platform/keybinding/common/abstractKeybindingService": {
 			"first.chord": "已按下({0})。正在等待同时按下第二个键...",
-			"missing.chord": "组合键({0}, {1})不是命令。"
+			"missing.chord": "组合键({0}，{1})不是命令。"
 		},
 		"vs/platform/theme/common/colorRegistry": {
 			"foreground": "整体前景色。此颜色仅在不被组件覆盖时适用。",
@@ -1537,7 +1537,7 @@
 			"menuBarVisibility": "控制菜单栏的可见性。“切换”设置表示隐藏菜单栏，按一次 Alt 键则将显示此菜单栏。默认情况下，除非窗口为全屏，否则菜单栏可见。",
 			"enableMenuBarMnemonics": "启用后，即可使用 Alt 快捷键打开主菜单。若禁用助记键，这些 Alt 快捷键将能绑定到编辑器命令。",
 			"autoDetectHighContrast": "如果已启用，将自动更改为高对比度主题；如果 Windows 正在使用高对比度主题，则当离开 Windows 高对比度主题时会更改为深色主题。",
-			"window.doubleClickIconToClose": "如果启用, 双击标题栏中的应用程序图标将关闭窗口, 并且该窗口无法通过图标拖动。此设置仅在 \"#window.titleBarStyle#\" 设置为 \"custom\" 时生效。",
+			"window.doubleClickIconToClose": "如果启用，双击标题栏中的应用程序图标将关闭窗口，并且该窗口无法通过图标拖动。此设置仅在 \"#window.titleBarStyle#\" 设置为 \"custom\" 时生效。",
 			"titleBarStyle": "调整窗口标题栏的外观。在 Linux 和 Windows 上，此设置也会影响应用程序和上下文菜单的外观。更改需要完全重新启动才能应用。",
 			"window.nativeTabs": "启用 macOS Sierra 窗口选项卡。请注意，更改在完全重新启动程序后才能生效。同时，开启原生选项卡将禁用自定义标题栏样式。",
 			"window.nativeFullScreen": "控制是否在 macOS 上使用原生全屏。禁用此设置可禁止 macOS 在全屏时创建新空间。",
@@ -1676,7 +1676,7 @@
 			"view.viewTitle": "提供的视图的标题菜单",
 			"view.itemContext": "提供的视图中的项目的上下文菜单",
 			"nonempty": "应为非空值。",
-			"opticon": "属性 \"icon\" 可以省略, 或者必须是字符串或文字, 如 \"{dark, light}\"",
+			"opticon": "属性 \"icon\" 可以省略，或者必须是字符串或文字，如 \"{dark, light}\"",
 			"requireStringOrObject": "属性“{0}”是必要属性，其类型必须是 \"string\" 或 \"object\"",
 			"requirestrings": "属性“{0}”和“{1}”是必要属性，其类型必须是 \"string\"",
 			"vscode.extension.contributes.commandType.command": "要执行的命令的标识符",
@@ -2017,7 +2017,7 @@
 			"mHelp": "帮助(&&H)",
 			"menubar.linuxTitlebarRevertNotification": "我们更新了 Linux 上的默认标题栏，使其使用本机设置。如果你需要，可回退到自定义设置。有关详细信息，可参阅我们的[联机文档](https://go.microsoft.com/fwlink/?linkid=2074137)。",
 			"goToSetting": "打开设置",
-			"menubar.customTitlebarAccessibilityNotification": "为您启用了辅助功能支持。对于最易于访问的体验, 我们建议使用自定义标题栏样式。",
+			"menubar.customTitlebarAccessibilityNotification": "为您启用了辅助功能支持。对于最易于访问的体验，我们建议使用自定义标题栏样式。",
 			"miMoveSidebarRight": "向右移动侧边栏(&&M)",
 			"miMoveSidebarLeft": "向左移动侧边栏(&&M)",
 			"miHideStatusbar": "隐藏状态栏(&&H)",
@@ -2263,7 +2263,7 @@
 			"pickEncodingForSave": "选择用于保存的文件编码"
 		},
 		"vs/workbench/browser/parts/editor/editorPicker": {
-			"entryAriaLabel": "{0}, 编辑器组选取器",
+			"entryAriaLabel": "{0}，编辑器组选取器",
 			"noResultsFoundInGroup": "未在组中找到匹配的已打开编辑器",
 			"noOpenedEditors": "已打开的编辑器组列表当前为空",
 			"noResultsFound": "未找到匹配的已打开编辑器",
@@ -2819,8 +2819,8 @@
 			"DebugTaskNotFound": "找不到指定的任务。",
 			"taskNotTrackedWithTaskId": "无法跟踪指定的任务。",
 			"taskNotTracked": "无法跟踪任务“{0}”。",
-			"debuggingPaused": "调试暂停的 {0}, {1} {2}",
-			"breakpointAdded": "已添加断点，行 {0}, 文件 {1}",
+			"debuggingPaused": "调试暂停的 {0}，{1} {2}",
+			"breakpointAdded": "已添加断点，行 {0}，文件 {1}",
 			"breakpointRemoved": "已删除断点，行 {0}，文件 {1}"
 		},
 		"vs/workbench/contrib/debug/browser/debugCommands": {
@@ -3751,7 +3751,7 @@
 			"markers.panel.action.filter": "筛选器问题",
 			"markers.panel.action.quickfix": "显示修复方案",
 			"markers.panel.filter.ariaLabel": "筛选器问题",
-			"markers.panel.filter.placeholder": "筛选。例: text, **/*.ts, !**/node_modules/**",
+			"markers.panel.filter.placeholder": "筛选。例: text，**/*.ts，!**/node_modules/**",
 			"markers.panel.filter.errors": "错误",
 			"markers.panel.filter.warnings": "警告",
 			"markers.panel.filter.infos": "信息",
@@ -3963,7 +3963,7 @@
 		"vs/workbench/contrib/preferences/browser/preferencesRenderers": {
 			"emptyUserSettingsHeader": "将设置放在此处以覆盖 \"默认设置\"。",
 			"emptyWorkspaceSettingsHeader": "将设置放在此处以覆盖 \"用户设置\"。",
-			"emptyFolderSettingsHeader": "将文件夹设置放在此处, 以覆盖 \"工作区设置\" 中的设置。",
+			"emptyFolderSettingsHeader": "将文件夹设置放在此处，以覆盖 \"工作区设置\" 中的设置。",
 			"editTtile": "编辑",
 			"replaceDefaultValue": "在设置中替换",
 			"copyDefaultValue": "复制到设置"
@@ -4228,7 +4228,7 @@
 			"search.searchRipgrepEnableDeprecated": "已弃用。请改用 \"search.runInExtensionHost\"",
 			"search.searchRipgrepEnable": "控制是否在扩展宿主中运行搜索",
 			"search.runInExtensionHost": "控制是否在扩展宿主中运行搜索。重启后才能生效。",
-			"search.usePCRE2": "是否在文本搜索中使用 pcre2 正则表达式引擎。这允许使用一些高级正则表达式功能, 如前瞻和反向引用。但是, 并非所有 pcre2 功能都受支持-仅支持 javascript 也支持的功能。",
+			"search.usePCRE2": "是否在文本搜索中使用 pcre2 正则表达式引擎。这允许使用一些高级正则表达式功能，如前瞻和反向引用。但是，并非所有 pcre2 功能都受支持-仅支持 javascript 也支持的功能。",
 			"search.actionsPositionAuto": "当搜索视图较窄时将操作栏置于右侧，当搜索视图较宽时，将它紧接在内容之后。",
 			"search.actionsPositionRight": "始终将操作栏放置在右侧。",
 			"search.actionsPosition": "在搜索视图中控制操作栏的位置。",
@@ -4270,7 +4270,7 @@
 			"noResultsIncludesExcludes": "在“{0}”中找不到结果(“{1}”除外) - ",
 			"noResultsIncludes": "“{0}”中未找到任何结果 - ",
 			"noResultsExcludes": "除“{0}”外，未找到任何结果 - ",
-			"noResultsFound": "未找到结果。查看您的设置配置排除, 并检查您的 gitignore 文件-",
+			"noResultsFound": "未找到结果。查看您的设置配置排除，并检查您的 gitignore 文件-",
 			"rerunSearch.message": "再次搜索",
 			"rerunSearchInAll.message": "在所有文件中再次搜索",
 			"openSettings.message": "打开设置",
@@ -4394,7 +4394,7 @@
 		},
 		"vs/workbench/contrib/snippets/browser/snippetCompletionProvider": {
 			"detail.snippet": "{0} ({1})",
-			"snippetSuggest.longLabel": "{0}, {1}"
+			"snippetSuggest.longLabel": "{0}，{1}"
 		},
 		"vs/workbench/contrib/stats/node/workspaceStats": {
 			"never again": "不再显示",
@@ -5057,7 +5057,7 @@
 			"workbenchConfigurationTitle": "工作台",
 			"workbench.startupEditor.none": "在启动时不打开编辑器。",
 			"workbench.startupEditor.welcomePage": "打开欢迎页面(默认)。",
-			"workbench.startupEditor.readme": "打开包含一个自述文件的文件夹时, 打开自述文件, 否则回退到 \"欢迎页面\"。",
+			"workbench.startupEditor.readme": "打开包含一个自述文件的文件夹时，打开自述文件，否则回退到 \"欢迎页面\"。",
 			"workbench.startupEditor.newUntitledFile": "打开新的无标题文件(仅在打开空工作区时适用)。",
 			"workbench.startupEditor.welcomePageInEmptyWorkbench": "在打开空工作区时打开欢迎页面。",
 			"workbench.startupEditor": "在没有从上一会话中恢复出信息的情况下，控制启动时显示的编辑器。",
@@ -5192,10 +5192,10 @@
 			"folderTarget": "文件夹设置"
 		},
 		"vs/workbench/services/configurationResolver/browser/configurationResolverService": {
-			"commandVariable.noStringType": "无法替换命令变量 \"{0}\", 因为命令没有返回字符串类型的结果。",
+			"commandVariable.noStringType": "无法替换命令变量 \"{0}\"，因为命令没有返回字符串类型的结果。",
 			"inputVariable.missingAttribute": "输入变量“{0}”的类型为“{1}”且必须包含“{2}”。",
 			"inputVariable.defaultInputValue": "默认值",
-			"inputVariable.command.noStringType": "无法替换输入变量 \"{0}\", 因为命令 \"{1}\" 没有返回类型字符串的结果。",
+			"inputVariable.command.noStringType": "无法替换输入变量 \"{0}\"，因为命令 \"{1}\" 没有返回类型字符串的结果。",
 			"inputVariable.unknownType": "输入变量“{0}”只能是 \"promptString\"、\"pickString\" 或 \"command\" 类型。",
 			"inputVariable.undefinedVariable": "遇到未定义的输入变量“{0}”。请删除或定义“{0}”以继续操作。"
 		},
@@ -5308,7 +5308,7 @@
 			"vscode.extension.activationEvents.onDebug": "在用户准备调试或准备设置调试配置时发出的激活事件。",
 			"vscode.extension.activationEvents.onDebugInitialConfigurations": "在需要创建 \"launch.json\" 文件(且需要调用 provideDebugConfigurations 的所有方法)时发出的激活事件。",
 			"vscode.extension.activationEvents.onDebugResolve": "在将要启动具有特定类型的调试会话(且需要调用相应的 resolveDebugConfiguration 方法)时发出的激活事件。",
-			"vscode.extension.activationEvents.onDebugAdapterProtocolTracker": "每当即将启动具有特定类型的调试会话并可能需要调试协议跟踪器时, 都会发出激活事件。",
+			"vscode.extension.activationEvents.onDebugAdapterProtocolTracker": "每当即将启动具有特定类型的调试会话并可能需要调试协议跟踪器时，都会发出激活事件。",
 			"vscode.extension.activationEvents.workspaceContains": "在打开至少包含一个匹配指定 glob 模式的文件的文件夹时发出的激活事件。",
 			"vscode.extension.activationEvents.onFileSystem": "在使用给定协议打开文件或文件夹时发出的激活事件。",
 			"vscode.extension.activationEvents.onSearch": "在开始从给定协议的文件夹中搜索时发出的激活事件。",
