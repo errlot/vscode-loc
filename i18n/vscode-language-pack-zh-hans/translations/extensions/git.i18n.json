@@ -239,7 +239,7 @@
 			"confirm discard all 2": "{0}\n\n此操作不可撤销，你当前的工作集将会永远丢失。",
 			"yes discard tracked": "放弃 1  个已跟踪的文件",
 			"yes discard tracked multiple": "放弃 {0} 个已跟踪的文件",
-			"unsaved files single": "以下文件尚未保存：{0}。\n\n您要在提交之前保存吗?",
+			"unsaved files single": "以下文件尚未保存: {0}。\n\n您要在提交之前保存吗?",
 			"unsaved files": "当前有 {0} 个文件尚未保存。\n\n您要在提交之前保存吗?",
 			"save and commit": "全部保存并提交",
 			"commit": "仍要提交",
