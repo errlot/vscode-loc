@@ -1039,7 +1039,7 @@
 			"copy": "复制(&&C)"
 		},
 		"vs/platform/issue/electron-main/issueService": {
-			"confirmCloseIssueReporter": "您的输入将不会保存。确实要关闭此窗口吗？",
+			"confirmCloseIssueReporter": "您的输入将不会保存。确实要关闭此窗口吗?",
 			"yes": "是",
 			"cancel": "取消",
 			"issueReporter": "问题报告程序",
@@ -2230,7 +2230,7 @@
 			"selectEOL": "选择行尾序列",
 			"selectLanguageMode": "选择语言模式",
 			"fileInfo": "文件信息",
-			"screenReaderDetectedExplanation.question": "您是否在使用屏幕阅读器来操作 VS Code？(使用屏幕阅读器时，折叠、小地图和自动换行等功能会被禁用)",
+			"screenReaderDetectedExplanation.question": "您是否在使用屏幕阅读器来操作 VS Code?(使用屏幕阅读器时，折叠、小地图和自动换行等功能会被禁用)",
 			"screenReaderDetectedExplanation.answerYes": "是",
 			"screenReaderDetectedExplanation.answerNo": "否",
 			"spacesSize": "空格: {0}",
@@ -2354,7 +2354,7 @@
 			"sizeGB": "{0} GB",
 			"sizeTB": "{0} TB",
 			"largeImageError": "图片太大，无法在编辑器中显示({0})。 ",
-			"resourceOpenExternalButton": "使用外部程序打开图片？",
+			"resourceOpenExternalButton": "使用外部程序打开图片?",
 			"nativeFileTooLargeError": "文件太大，无法在编辑器中显示({0})。",
 			"nativeBinaryError": "此文件是二进制文件或使用了不支持的文本编码，无法在编辑器中显示。",
 			"openAsText": "是否仍要打开?",
@@ -3084,7 +3084,7 @@
 			"singleDependentError": "无法禁用扩展“{0}”。扩展“{1}”取决于此。",
 			"twoDependentsError": "无法禁用扩展“{0}”。扩展“{1}”和扩展“{2}”取决于此。",
 			"multipleDependentsError": "无法禁用扩展“{0}”。扩展“{1}”、“{2}”和其他扩展取决于此。",
-			"installConfirmation": "是否要安装“{0}”扩展？",
+			"installConfirmation": "是否要安装“{0}”扩展?",
 			"install": "安装"
 		},
 		"vs/workbench/contrib/extensions/common/extensionsInput": {},
@@ -3542,8 +3542,8 @@
 			"undoTrash": "可以从废纸篓还原。",
 			"doNotAskAgain": "不再询问",
 			"irreversible": "此操作不可逆!",
-			"binFailed": "无法删除到回收站。是否永久删除？",
-			"trashFailed": "无法删除到废纸篓。是否永久删除？",
+			"binFailed": "无法删除到回收站。是否永久删除?",
+			"trashFailed": "无法删除到废纸篓。是否永久删除?",
 			"deletePermanentlyButtonLabel": "永久删除(&&D)",
 			"retryButtonLabel": "重试(&&R)",
 			"confirmMoveTrashMessageFilesAndDirectories": "是否确定要删除以下 {0} 个文件或文件夹(包括其内容)?",
@@ -4257,7 +4257,7 @@
 			"replaceAll.occurrences.files.message": "已将 {1} 个文件中出现的 {0} 处替换为“{2}”。 ",
 			"removeAll.occurrences.files.message": "已替换 {1} 文件中出现的 {0}。",
 			"removeAll.occurrence.file.confirmation.message": "是否将 {1} 文件中出现的 {0} 替换为“{2}”?",
-			"replaceAll.occurrence.file.confirmation.message": "替换 {1} 个文件中出现的全部 {0} 处？ ",
+			"replaceAll.occurrence.file.confirmation.message": "替换 {1} 个文件中出现的全部 {0} 处? ",
 			"removeAll.occurrence.files.confirmation.message": "是否将 {1} 文件中出现的 {0} 替换为“{2}”?",
 			"replaceAll.occurrence.files.confirmation.message": "是否替换 {1} 文件中出现的 {0}?",
 			"removeAll.occurrences.file.confirmation.message": "是否将 {1} 文件中出现的 {0} 替换为“{2}”?",
@@ -4938,7 +4938,7 @@
 			"never again": "不再显示"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalConfigHelper": {
-			"terminal.integrated.allowWorkspaceShell": "是否允许此工作区修改您的终端？{0}",
+			"terminal.integrated.allowWorkspaceShell": "是否允许此工作区修改您的终端?{0}",
 			"allow": "Allow",
 			"disallow": "Disallow"
 		},
@@ -5663,7 +5663,7 @@
 			"save": "保存",
 			"doNotSave": "Don't Save",
 			"cancel": "取消",
-			"saveWorkspaceMessage": "你是否要将你的工作区配置保存为文件？",
+			"saveWorkspaceMessage": "你是否要将你的工作区配置保存为文件?",
 			"saveWorkspaceDetail": "若要再次打开此工作区，请先保存。",
 			"saveWorkspace": "保存工作区",
 			"ok": "确定",
