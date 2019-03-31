@@ -345,7 +345,7 @@
 			"sideBySide": "控制差异编辑器的显示方式是并排还是内联。",
 			"ignoreTrimWhitespace": "控制在差异编辑器中是否把前导空格或尾随空格的改动显示为差异。",
 			"largeFileOptimizations": "对大型文件进行特殊处理，禁用某些内存密集型功能。",
-			"renderIndicators": "控制差异编辑器是否为添加/删除的更改显示 +/- 指示符号。"
+			"renderIndicators": "控制差异编辑器是否为添加/删除的变更显示 +/- 指示符号。"
 		},
 		"vs/editor/contrib/bracketMatching/bracketMatching": {
 			"overviewRulerBracketMatchForeground": "概览标尺上表示匹配括号的标记颜色。",
@@ -2061,8 +2061,8 @@
 			"showOpenedEditors": "显示打开的编辑器",
 			"splitEditorRight": "向右拆分编辑器",
 			"splitEditorDown": "向下拆分编辑器",
-			"navigate.prev.label": "上一个更改",
-			"navigate.next.label": "下一个更改",
+			"navigate.prev.label": "上一个变更",
+			"navigate.next.label": "下一个变更",
 			"ignoreTrimWhitespace.label": "忽略可裁剪的空白字符",
 			"showTrimWhitespace.label": "显示裁剪的空白字符",
 			"keepEditor": "保留编辑器",
@@ -4171,14 +4171,14 @@
 			"viewletTitle": "{0}: {1}"
 		},
 		"vs/workbench/contrib/scm/browser/dirtydiffDecorator": {
-			"changes": "第 {0} 个更改 (共 {1} 个)",
-			"change": "第 {0} 个更改 (共 {1} 个)",
-			"show previous change": "显示上一个更改",
-			"show next change": "显示下一个更改",
+			"changes": "第 {0} 个变更(共 {1} 个)",
+			"change": "第 {0} 个变更(共 {1} 个)",
+			"show previous change": "显示上一个变更",
+			"show next change": "显示下一个变更",
 			"miGotoNextChange": "下一个更新(&&C)",
-			"miGotoPreviousChange": "上一个更改(&&C)",
-			"move to previous change": "移动到上一个更改",
-			"move to next change": "移动到下一个更改",
+			"miGotoPreviousChange": "上一个变更(&&C)",
+			"move to previous change": "移动到上一个变更",
+			"move to next change": "移动到下一个变更",
 			"editorGutterModifiedBackground": "编辑器导航线中被修改行的背景颜色。",
 			"editorGutterAddedBackground": "编辑器导航线中已插入行的背景颜色。",
 			"editorGutterDeletedBackground": "编辑器导航线中被删除行的背景颜色。",
@@ -4187,7 +4187,7 @@
 			"overviewRulerDeletedForeground": "概览标尺中已删除内容的颜色。"
 		},
 		"vs/workbench/contrib/scm/browser/scmActivity": {
-			"scmPendingChangesBadge": "{0} 个挂起的更改"
+			"scmPendingChangesBadge": "{0} 个挂起的变更"
 		},
 		"vs/workbench/contrib/search/browser/search.contribution": {
 			"search": "搜索",
