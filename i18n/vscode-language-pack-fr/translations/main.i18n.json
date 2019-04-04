@@ -8,11 +8,11 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"vs/base/parts/tree/browser/treeDefaults": {
-			"collapse all": "Réduire tout"
-		},
 		"vs/base/browser/ui/list/listWidget": {
 			"aria list": "{0}. Utiliser les touches de navigation pour naviguer."
+		},
+		"vs/base/parts/tree/browser/treeDefaults": {
+			"collapse all": "Réduire tout"
 		},
 		"vs/base/common/severity": {
 			"sev.error": "Erreur",
@@ -63,6 +63,9 @@
 			"enable filter on type": "Activer le filtre sur le type",
 			"empty": "Aucun élément",
 			"found": "{0} éléments sur {1} correspondants"
+		},
+		"vs/base/browser/ui/dialog/dialog": {
+			"dialogClose": "Fermer la boîte de dialogue"
 		},
 		"vs/base/common/keybindingLabels": {
 			"ctrlKey": "Ctrl",
@@ -156,6 +159,61 @@
 		},
 		"vs/editor/browser/widget/diffEditorWidget": {
 			"diff.tooLarge": "Impossible de comparer les fichiers car l'un d'eux est trop volumineux."
+		},
+		"vs/editor/common/standaloneStrings": {
+			"noSelection": "Aucune sélection",
+			"singleSelectionRange": "Ligne {0}, colonne {1} ({2} sélectionné)",
+			"singleSelection": "Ligne {0}, colonne {1}",
+			"multiSelectionRange": "{0} sélections ({1} caractères sélectionnés)",
+			"multiSelection": "{0} sélections",
+			"emergencyConfOn": "Remplacement du paramètre 'accessibilitySupport' par 'on'.",
+			"openingDocs": "Ouverture de la page de documentation sur l'accessibilité de l'éditeur.",
+			"readonlyDiffEditor": "dans un volet en lecture seule d'un éditeur de différences.",
+			"editableDiffEditor": "dans un volet d'un éditeur de différences.",
+			"readonlyEditor": " dans un éditeur de code en lecture seule",
+			"editableEditor": " dans un éditeur de code",
+			"changeConfigToOnMac": "Pour configurer l'éditeur de manière à être optimisé en cas d'utilisation d'un lecteur d'écran, appuyez sur Commande+E maintenant.",
+			"changeConfigToOnWinLinux": "Pour configurer l'éditeur de manière à être optimisé en cas d'utilisation d'un lecteur d'écran, appuyez sur Contrôle+E maintenant.",
+			"auto": "L'éditeur est configuré pour ne jamais être optimisé en cas d'utilisation avec un lecteur d'écran, ce qui n'est pas le cas pour le moment.",
+			"tabFocusModeOnMsg": "Appuyez sur Tab dans l'éditeur pour déplacer le focus vers le prochain élément pouvant être désigné comme élément actif. Activez ou désactivez ce comportement en appuyant sur {0}.",
+			"tabFocusModeOnMsgNoKb": "Appuyez sur Tab dans l'éditeur pour déplacer le focus vers le prochain élément pouvant être désigné comme élément actif. La commande {0} ne peut pas être déclenchée par une combinaison de touches.",
+			"tabFocusModeOffMsg": "Appuyez sur Tab dans l'éditeur pour insérer le caractère de tabulation. Activez ou désactivez ce comportement en appuyant sur {0}.",
+			"tabFocusModeOffMsgNoKb": "Appuyez sur Tab dans l'éditeur pour insérer le caractère de tabulation. La commande {0} ne peut pas être déclenchée par une combinaison de touches.",
+			"openDocMac": "Appuyez sur Commande+H maintenant pour ouvrir une fenêtre de navigateur avec plus d'informations sur l'accessibilité de l'éditeur.",
+			"openDocWinLinux": "Appuyez sur Contrôle+H maintenant pour ouvrir une fenêtre de navigateur avec plus d'informations sur l'accessibilité de l'éditeur.",
+			"outroMsg": "Vous pouvez masquer cette info-bulle et revenir à l'éditeur en appuyant sur Échap ou Maj+Échap.",
+			"showAccessibilityHelpAction": "Afficher l'aide sur l'accessibilité",
+			"inspectTokens": "Développeur : Inspecter les jetons",
+			"gotoLineLabelValidLineAndColumn": "Atteindre la ligne {0} et le caractère {1}",
+			"gotoLineLabelValidLine": "Atteindre la ligne {0}",
+			"gotoLineLabelEmptyWithLineLimit": "Tapez un numéro de ligne à atteindre entre 1 et {0}",
+			"gotoLineLabelEmptyWithLineAndColumnLimit": "Taper un caractère entre 1 et {0} auquel accéder",
+			"gotoLineAriaLabel": "Ligne actuelle : {0}. Accédez à la ligne {1}.",
+			"gotoLineActionInput": "Taper un numéro de ligne, suivi d'un point-virgule facultatif et d'un numéro de caractère auquel accéder",
+			"gotoLineActionLabel": "Atteindre la ligne...",
+			"ariaLabelEntryWithKey": "{0}, {1}, commandes",
+			"ariaLabelEntry": "{0}, commandes",
+			"quickCommandActionInput": "Taper le nom d'une action à exécuter",
+			"quickCommandActionLabel": "Palette de commandes",
+			"entryAriaLabel": "{0}, symboles",
+			"quickOutlineActionInput": "Taper le nom d'un identificateur auquel vous voulez accéder",
+			"quickOutlineActionLabel": "Accéder au symbole...",
+			"symbols": "symboles ({0})",
+			"modules": "modules ({0})",
+			"class": "classes ({0})",
+			"interface": "interfaces ({0})",
+			"method": "méthodes ({0})",
+			"function": "fonctions ({0})",
+			"property": "propriétés ({0})",
+			"variable": "variables ({0})",
+			"variable2": "variables ({0})",
+			"_constructor": "constructeurs ({0})",
+			"call": "appels ({0})",
+			"editorViewAccessibleLabel": "Contenu d'éditeur",
+			"accessibilityHelpMessageIE": "Appuyez sur Ctrl+F1 pour voir les options d'accessibilité.",
+			"accessibilityHelpMessage": "Appuyez sur Alt+F1 pour voir les options d'accessibilité.",
+			"toggleHighContrast": "Activer/désactiver le thème à contraste élevé",
+			"bulkEditServiceSummary": "{0} modifications dans {1} fichiers"
 		},
 		"vs/editor/browser/widget/diffReview": {
 			"label.close": "Fermer",
@@ -267,39 +325,39 @@
 			"suggest.localityBonus": "Contrôle si le tri favorise trier les mots qui apparaissent près du curseur.",
 			"suggest.shareSuggestSelections": "Contrôle si les sélections de suggestion mémorisées sont partagées entre plusieurs espaces de travail et fenêtres (nécessite '#editor.suggestSelection#').",
 			"suggest.snippetsPreventQuickSuggestions": "Contrôler si un extrait de code actif empêche les suggestions rapides.",
-			"suggest.showIcons": "Controls whether to show or hide icons in suggestions.",
-			"suggest.maxVisibleSuggestions": "Controls how many suggestions IntelliSense will show before showing a scrollbar.",
-			"suggest.filtered": "Controls whether some suggestion types should be filtered from IntelliSense. A list of suggestion types can be found here: https://code.visualstudio.com/docs/editor/intellisense#_types-of-completions.",
-			"suggest.filtered.method": "When set to `false` IntelliSense never shows `method` suggestions.",
-			"suggest.filtered.function": "When set to `false` IntelliSense never shows `function` suggestions.",
-			"suggest.filtered.constructor": "When set to `false` IntelliSense never shows `constructor` suggestions.",
-			"suggest.filtered.field": "When set to `false` IntelliSense never shows `field` suggestions.",
-			"suggest.filtered.variable": "When set to `false` IntelliSense never shows `variable` suggestions.",
-			"suggest.filtered.class": "When set to `false` IntelliSense never shows `class` suggestions.",
-			"suggest.filtered.struct": "When set to `false` IntelliSense never shows `struct` suggestions.",
-			"suggest.filtered.interface": "When set to `false` IntelliSense never shows `interface` suggestions.",
-			"suggest.filtered.module": "When set to `false` IntelliSense never shows `module` suggestions.",
-			"suggest.filtered.property": "When set to `false` IntelliSense never shows `property` suggestions.",
-			"suggest.filtered.event": "When set to `false` IntelliSense never shows `event` suggestions.",
-			"suggest.filtered.operator": "When set to `false` IntelliSense never shows `operator` suggestions.",
-			"suggest.filtered.unit": "When set to `false` IntelliSense never shows `unit` suggestions.",
-			"suggest.filtered.value": "When set to `false` IntelliSense never shows `value` suggestions.",
-			"suggest.filtered.constant": "When set to `false` IntelliSense never shows `constant` suggestions.",
-			"suggest.filtered.enum": "When set to `false` IntelliSense never shows `enum` suggestions.",
-			"suggest.filtered.enumMember": "When set to `false` IntelliSense never shows `enumMember` suggestions.",
-			"suggest.filtered.keyword": "When set to `false` IntelliSense never shows `keyword` suggestions.",
-			"suggest.filtered.text": "When set to `false` IntelliSense never shows `text` suggestions.",
-			"suggest.filtered.color": "When set to `false` IntelliSense never shows `color` suggestions.",
-			"suggest.filtered.file": "When set to `false` IntelliSense never shows `file` suggestions.",
-			"suggest.filtered.reference": "When set to `false` IntelliSense never shows `reference` suggestions.",
-			"suggest.filtered.customcolor": "When set to `false` IntelliSense never shows `customcolor` suggestions.",
-			"suggest.filtered.folder": "When set to `false` IntelliSense never shows `folder` suggestions.",
-			"suggest.filtered.typeParameter": "When set to `false` IntelliSense never shows `typeParameter` suggestions.",
-			"suggest.filtered.snippet": "When set to `false` IntelliSense never shows `snippet` suggestions.",
-			"editor.gotoLocation.many": "Controls the behaviour of 'go to'-commands, like go to definition, when multiple target locations exist.",
-			"editor.gotoLocation.many.peek": "Show peek view of the results at the request location",
-			"editor.gotoLocation.many.revealAndPeek": "Reveal the first result and show peek view at its location",
-			"editor.gotoLocation.many.reveal": "Reveal the first result and ignore others",
+			"suggest.showIcons": "Contrôle s'il faut montrer ou masquer les icônes dans les suggestions.",
+			"suggest.maxVisibleSuggestions": "Contrôle le nombre de suggestions IntelliSense affichées avant de montrer une barre de défilement (15 maximum).",
+			"suggest.filtered": "Contrôle si certains types de suggestion doivent être filtrés dans IntelliSense. Une liste de types de suggestion est disponible ici : https://code.visualstudio.com/docs/editor/intellisense#_types-of-completions.",
+			"suggest.filtered.method": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'method'.",
+			"suggest.filtered.function": "Lorsque la valeur « false » est positionnée, IntelliSense n’affiche jamais de suggestion de « fonction ».",
+			"suggest.filtered.constructor": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'constructor'.",
+			"suggest.filtered.field": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'field'.",
+			"suggest.filtered.variable": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'variable'.",
+			"suggest.filtered.class": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'class'.",
+			"suggest.filtered.struct": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'struct'.",
+			"suggest.filtered.interface": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'interface'.",
+			"suggest.filtered.module": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'module'.",
+			"suggest.filtered.property": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'property'.",
+			"suggest.filtered.event": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'event'.",
+			"suggest.filtered.operator": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'operator'.",
+			"suggest.filtered.unit": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'unit'.",
+			"suggest.filtered.value": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'value'.",
+			"suggest.filtered.constant": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'constant'.",
+			"suggest.filtered.enum": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'enum'.",
+			"suggest.filtered.enumMember": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'enumMember'.",
+			"suggest.filtered.keyword": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'keyword'.",
+			"suggest.filtered.text": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'text'.",
+			"suggest.filtered.color": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'color'.",
+			"suggest.filtered.file": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'file'.",
+			"suggest.filtered.reference": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'reference'.",
+			"suggest.filtered.customcolor": "Lorsque la valeur « false » est sélectionnée IntelliSense n’affiche jamais de suggestion pour « customcolor ».",
+			"suggest.filtered.folder": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'folder'.",
+			"suggest.filtered.typeParameter": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'typeParameter'.",
+			"suggest.filtered.snippet": "Quand la valeur est 'false', IntelliSense ne montre jamais de suggestions pour 'snippet'.",
+			"editor.gotoLocation.multiple": "Contrôle le comportement des commandes 'Accéder à', comme Accéder à la définition, quand plusieurs emplacements cibles existent.",
+			"editor.gotoLocation.multiple.peek": "Montrer l'aperçu des résultats (par défaut)",
+			"editor.gotoLocation.multiple.gotoAndPeek": "Accéder au résultat principal et montrer un aperçu",
+			"editor.gotoLocation.multiple.goto": "Accéder au résultat principal et ignorer les autres",
 			"selectionHighlight": "Contrôle si l'éditeur doit mettre en surbrillance les correspondances similaires à la sélection.",
 			"occurrencesHighlight": "Contrôle si l'éditeur doit mettre en surbrillance les occurrences de symboles sémantiques.",
 			"overviewRulerLanes": "Contrôle le nombre de décorations qui peuvent apparaître à la même position dans la règle de la vue d’ensemble.",
@@ -377,11 +435,11 @@
 			"comment.block": "Activer/désactiver le commentaire de bloc",
 			"miToggleBlockComment": "Afficher/masquer le commentaire de &&bloc"
 		},
-		"vs/editor/contrib/contextmenu/contextmenu": {
-			"action.showContextMenu.label": "Afficher le menu contextuel de l'éditeur"
-		},
 		"vs/editor/contrib/cursorUndo/cursorUndo": {
 			"cursor.undo": "Annulation réversible"
+		},
+		"vs/editor/contrib/contextmenu/contextmenu": {
+			"action.showContextMenu.label": "Afficher le menu contextuel de l'éditeur"
 		},
 		"vs/editor/contrib/find/findController": {
 			"startFindAction": "Rechercher",
@@ -393,6 +451,11 @@
 			"previousSelectionMatchFindAction": "Sélection précédente",
 			"startReplace": "Remplacer",
 			"miReplace": "&&Remplacer"
+		},
+		"vs/editor/contrib/fontZoom/fontZoom": {
+			"EditorFontZoomIn.label": "Agrandissement de l'éditeur de polices de caractères",
+			"EditorFontZoomOut.label": "Rétrécissement de l'éditeur de polices de caractères",
+			"EditorFontZoomReset.label": "Remise à niveau du zoom de l'éditeur de polices de caractères"
 		},
 		"vs/editor/contrib/folding/folding": {
 			"unfoldAction.label": "Déplier",
@@ -406,16 +469,7 @@
 			"unfoldAllAction.label": "Déplier tout",
 			"foldLevelAction.label": "Niveau de pliage {0}"
 		},
-		"vs/editor/contrib/fontZoom/fontZoom": {
-			"EditorFontZoomIn.label": "Agrandissement de l'éditeur de polices de caractères",
-			"EditorFontZoomOut.label": "Rétrécissement de l'éditeur de polices de caractères",
-			"EditorFontZoomReset.label": "Remise à niveau du zoom de l'éditeur de polices de caractères"
-		},
 		"vs/editor/contrib/format/formatActions": {
-			"hint11": "1 modification de format effectuée à la ligne {0}",
-			"hintn1": "{0} modifications de format effectuées à la ligne {1}",
-			"hint1n": "1 modification de format effectuée entre les lignes {0} et {1}",
-			"hintnn": "{0} modifications de format effectuées entre les lignes {1} et {2}",
 			"formatDocument.label": "Mettre le document en forme",
 			"formatSelection.label": "Mettre la sélection en forme"
 		},
@@ -500,6 +554,9 @@
 			"missing.url": "Échec de l'ouverture de ce lien, car sa cible est manquante.",
 			"label": "Ouvrir le lien"
 		},
+		"vs/editor/contrib/parameterHints/parameterHints": {
+			"parameterHints.trigger.label": "Indicateurs des paramètres Trigger"
+		},
 		"vs/editor/contrib/multicursor/multicursor": {
 			"mutlicursor.insertAbove": "Ajouter un curseur au-dessus",
 			"miInsertCursorAbove": "&&Ajouter un curseur au-dessus",
@@ -519,9 +576,6 @@
 			"miSelectHighlights": "Sélectionner toutes les &&occurrences",
 			"changeAll.label": "Modifier toutes les occurrences"
 		},
-		"vs/editor/contrib/parameterHints/parameterHints": {
-			"parameterHints.trigger.label": "Indicateurs des paramètres Trigger"
-		},
 		"vs/editor/contrib/referenceSearch/referenceSearch": {
 			"meta.titleReference": " – {0} références",
 			"references.action.label": "Aperçu des références"
@@ -539,12 +593,12 @@
 			"smartSelect.shrink": "Réduire la sélection",
 			"miSmartSelectShrink": "&&Réduire la sélection"
 		},
-		"vs/editor/contrib/suggest/suggestController": {
-			"arai.alert.snippet": "Accepting '{0}' made {1} additional edits",
-			"suggest.trigger.label": "Suggestions pour Trigger"
-		},
 		"vs/editor/contrib/tokenization/tokenization": {
 			"forceRetokenize": "Développeur : forcer la retokenisation"
+		},
+		"vs/editor/contrib/suggest/suggestController": {
+			"arai.alert.snippet": "L'acceptation de '{0}' a entraîné {1} modifications supplémentaires",
+			"suggest.trigger.label": "Suggestions pour Trigger"
 		},
 		"vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode": {
 			"toggle.tabMovesFocus": "Activer/désactiver l'utilisation de la touche Tab pour déplacer le focus",
@@ -562,6 +616,9 @@
 			"wordHighlight.previous.label": "Aller à la mise en évidence de symbole précédente",
 			"wordHighlight.trigger.label": "Déclencher la mise en évidence de symbole"
 		},
+		"vs/editor/contrib/referenceSearch/peekViewWidget": {
+			"label.close": "Fermer"
+		},
 		"vs/editor/contrib/codeAction/codeActionCommands": {
 			"quickFixWithKb": "Afficher les correctifs ({0})",
 			"quickFix": "Afficher les correctifs",
@@ -577,6 +634,12 @@
 			"fixAll.noneMessage": "Aucune action Tout corriger disponible",
 			"autoFix.label": "Corriger automatiquement...",
 			"editor.action.autoFix.noneMessage": "Aucun correctif automatique disponible"
+		},
+		"vs/editor/contrib/format/format": {
+			"hint11": "1 modification de format effectuée à la ligne {0}",
+			"hintn1": "{0} modifications de format effectuées à la ligne {1}",
+			"hint1n": "1 modification de format effectuée entre les lignes {0} et {1}",
+			"hintnn": "{0} modifications de format effectuées entre les lignes {1} et {2}"
 		},
 		"vs/editor/contrib/find/findWidget": {
 			"label.find": "Rechercher",
@@ -596,9 +659,6 @@
 		},
 		"vs/editor/contrib/message/messageController": {
 			"editor.readonly": "Impossible de modifier dans l’éditeur en lecture seule"
-		},
-		"vs/editor/contrib/referenceSearch/peekViewWidget": {
-			"label.close": "Fermer"
 		},
 		"vs/editor/contrib/referenceSearch/referencesController": {
 			"labelLoading": "Chargement en cours..."
@@ -797,7 +857,7 @@
 			"proxySupportOn": "Activez la prise en charge de proxy pour les extensions.",
 			"proxySupportOverride": "Activer le support de proxy pour les extensions, remplacer les options de demande.",
 			"proxySupport": "Utilisez la prise en charge du proxy pour les extensions.",
-			"systemCertificates": "Controls whether CA certificates should be loaded from the OS."
+			"systemCertificates": "Contrôle si les certificats d'autorité de certification doivent être chargés à partir de l'OS. (Sous Windows et macOS vous devez recharger la fenêtre après désactivation de ce paramètre.)"
 		},
 		"vs/platform/workspaces/common/workspaces": {
 			"codeWorkspace": "Espace de travail de code"
@@ -898,6 +958,10 @@
 		"vs/platform/label/common/label": {
 			"untitledWorkspace": "Sans titre(Espace de travail)",
 			"workspaceName": "{0} (Espace de travail)"
+		},
+		"vs/platform/dialogs/browser/dialogService": {
+			"yesButton": "&&Oui",
+			"cancelButton": "Annuler"
 		},
 		"vs/platform/keybinding/common/abstractKeybindingService": {
 			"first.chord": "Touche ({0}) utilisée. En attente de la seconde touche pour la pression simultanée...",
@@ -1085,7 +1149,7 @@
 			"miDownloadingUpdate": "Téléchargement de la mise à jour...",
 			"miInstallUpdate": "Installer la &&mise à jour...",
 			"miInstallingUpdate": "Installation de la mise à jour...",
-			"miRestartToUpdate": "Redémarrer pour mettre à jo&&ur..."
+			"miRestartToUpdate": "Redémarrer pour &&mettre à jour"
 		},
 		"win32/i18n/Default": {
 			"SetupAppTitle": "Installation",
@@ -1335,7 +1399,7 @@
 			"secondInstanceAdminDetail": "Veuillez s'il vous plaît fermer l'autre instance et réessayer à nouveau.",
 			"close": "&&Fermer",
 			"startupDataDirError": "Impossible d'écrire les données utilisateur du programme.",
-			"startupDataDirErrorDetail": "Please make sure the directories {0} and {1} are writeable."
+			"startupDataDirErrorDetail": "Vérifiez que les répertoires {0} et {1} sont inscriptibles."
 		},
 		"vs/code/node/cliProcessMain": {
 			"notFound": "Extension '{0}' introuvable.",
@@ -1596,20 +1660,20 @@
 			"settings.editor.desc": "Détermine quel éditeur de paramètres utiliser par défaut.",
 			"workbench.enableExperiments": "Récupère les fonctionnalités expérimentales pour exécuter à partir d’un service en ligne de Microsoft.",
 			"workbench.useExperimentalGridLayout": "Active la disposition de grille pour le banc d'essai. Ce paramètre peut activer d'autres options de disposition pour les composants du banc d'essai.",
-			"windowTitle": "Controls the window title based on the active editor. Variables are substituted based on the context:",
-			"activeEditorShort": "`${activeEditorShort}`: the file name (e.g. myFile.txt).",
-			"activeEditorMedium": "`${activeEditorMedium}`: the path of the file relative to the workspace folder (e.g. myFolder/myFileFolder/myFile.txt).",
-			"activeEditorLong": "`${activeEditorLong}`: the full path of the file (e.g. /Users/Development/myFolder/myFileFolder/myFile.txt).",
-			"activeFolderShort": "`${activeFolderShort}`: the name of the folder the file is contained in (e.g. myFileFolder).",
-			"activeFolderMedium": "`${activeFolderMedium}`: the path of the folder the file is contained in, relative to the workspace folder (e.g. myFolder/myFileFolder).",
-			"activeFolderLong": "`${activeFolderLong}`: the full path of the folder the file is contained in (e.g. /Users/Development/myFolder/myFileFolder).",
-			"folderName": "`${folderName}`: name of the workspace folder the file is contained in (e.g. myFolder).",
-			"folderPath": "`${folderPath}`: file path of the workspace folder the file is contained in (e.g. /Users/Development/myFolder).",
-			"rootName": "`${rootName}`: name of the workspace (e.g. myFolder or myWorkspace).",
-			"rootPath": "`${rootPath}`: file path of the workspace (e.g. /Users/Development/myWorkspace).",
-			"appName": "`${appName}`: e.g. VS Code.",
-			"dirty": "`${dirty}`: a dirty indicator if the active editor is dirty.",
-			"separator": "`${separator}`: a conditional separator (\" - \") that only shows when surrounded by variables with values or static text.",
+			"windowTitle": "Contrôle basé sur l’éditeur actif du titre de la fenêtre. Les variables sont remplacées selon le contexte :",
+			"activeEditorShort": "'${activeEditorShort}' : nom du fichier (par ex., myFile.txt).",
+			"activeEditorMedium": "'${activeEditorMedium}' : chemin du fichier relatif au dossier d'espace de travail (par ex., myFolder/myFileFolder/myFile.txt).",
+			"activeEditorLong": "'${activeEditorLong}' : chemin complet du fichier (par ex., /Users/Development/myFolder/myFileFolder/myFile.txt).",
+			"activeFolderShort": "'${activeFolderShort}' : nom du dossier contenant le fichier (par ex., myFileFolder).",
+			"activeFolderMedium": "'${activeFolderMedium}' : chemin du dossier contenant le fichier, relatif au dossier d'espace de travail (par ex., myFolder/myFileFolder).",
+			"activeFolderLong": "'${activeFolderLong}' : chemin complet du dossier contenant le fichier (par ex., /Users/Development/myFolder/myFileFolder).",
+			"folderName": "'${folderName} : nom du dossier d'espace de travail contenant le fichier (par ex., myFolder).",
+			"folderPath": "'${folderPath}' : chemin de fichier du dossier d'espace de travail contenant le fichier (par ex., /Users/Development/myFolder).",
+			"rootName": "'${rootName}' : nom de l'espace de travail (par ex., myFolder ou myWorkspace).",
+			"rootPath": "'${rootPath}' : chemin de fichier de l'espace de travail (par ex., /Users/Development/myWorkspace).",
+			"appName": "« ${appName} » : par exemple, VS Code.",
+			"dirty": "'${dirty}' : indicateur erroné si l'éditeur actif est erroné.",
+			"separator": "'${separator}' : séparateur conditionnel (\"-\") qui apparaît uniquement quand il est entouré de variables avec des valeurs ou du texte statique.",
 			"windowConfigurationTitle": "Fenêtre",
 			"zenModeConfigurationTitle": "Mode Zen",
 			"zenMode.fullScreen": "Contrôle si activer le Mode Zen met aussi le workbench en mode plein écran.",
@@ -1668,7 +1732,7 @@
 			"menus.explorerContext": "Menu contextuel de l'Explorateur de fichiers",
 			"menus.editorTabContext": "Menu contextuel des onglets de l'éditeur",
 			"menus.debugCallstackContext": "Menu contextuel de la pile d'appels de débogage",
-			"menus.debugToolbar": "Menu de la barre d'outils de débogage",
+			"menus.debugToolBar": "The debug toolbar menu",
 			"menus.scmTitle": "Menu du titre du contrôle de code source",
 			"menus.scmSourceControl": "Le menu de contrôle de code source",
 			"menus.resourceGroupContext": "Menu contextuel du groupe de ressources du contrôle de code source",
@@ -1688,6 +1752,7 @@
 			"vscode.extension.contributes.commands": "Ajoute des commandes à la palette de commandes.",
 			"dup": "La commande '{0}' apparaît plusieurs fois dans la section 'commands'.",
 			"menuId.invalid": "'{0}' est un identificateur de menu non valide",
+			"proposedAPI.invalid": "{0} est un identificateur de menu proposé disponible uniquement après le développement ou avec le commutateur de ligne de commande suivant : --enable-proposed-api {1}",
 			"missing.command": "L'élément de menu fait référence à une commande '{0}' qui n'est pas définie dans la section 'commands'.",
 			"missing.altCommand": "L'élément de menu fait référence à une commande alt '{0}' qui n'est pas définie dans la section 'commands'.",
 			"dupe.command": "L'élément de menu fait référence à la même commande que la commande par défaut et la commande alt"
@@ -1770,14 +1835,14 @@
 			"removeFromEditorHistory": "Supprimer de l'historique",
 			"pickHistory": "Sélectionnez une entrée de l'éditeur à supprimer de l'historique"
 		},
+		"vs/workbench/browser/parts/editor/editorPart": {
+			"groupLabel": "Grouper {0}"
+		},
 		"vs/workbench/browser/parts/titlebar/titlebarPart": {
 			"patchedWindowTitle": "[Non prise en charge]",
 			"userIsAdmin": "[Administrator]",
 			"userIsSudo": "[Superuser]",
 			"devExtensionWindowTitlePrefix": "[Hôte de développement d'extension]"
-		},
-		"vs/workbench/browser/parts/editor/editorPart": {
-			"groupLabel": "Grouper {0}"
 		},
 		"vs/workbench/browser/parts/activitybar/activitybarPart": {
 			"hideActivitBar": "Masquer la barre d'activités",
@@ -1793,45 +1858,43 @@
 		"vs/workbench/browser/parts/statusbar/statusbarPart": {
 			"manageExtension": "Gérer l'extension"
 		},
-		"vs/workbench/api/common/jsonValidationExtensionPoint": {
-			"contributes.jsonValidation": "Ajoute une configuration de schéma json.",
-			"contributes.jsonValidation.fileMatch": "Modèle de fichier correspondant recherché, par exemple \"package.json\" ou \"*.launch\".",
-			"contributes.jsonValidation.url": "URL de schéma ('http:', 'https:') ou chemin relatif du dossier d'extensions ('./').",
-			"invalid.jsonValidation": "'configuration.jsonValidation' doit être un tableau",
-			"invalid.fileMatch": "'configuration.jsonValidation.fileMatch' doit être défini",
-			"invalid.url": "'configuration.jsonValidation.url' doit être une URL ou un chemin relatif",
-			"invalid.path.1": "'contributes.{0}.url' ({1}) doit être inclus dans le dossier de l'extension ({2}). L'extension risque de ne pas être portable.",
-			"invalid.url.fileschema": "'configuration.jsonValidation.url' est une URL relative non valide : {0}",
-			"invalid.url.schema": "'configuration.jsonValidation.url' doit commencer par 'http:', 'https:' ou './' pour référencer les schémas situés dans l'extension"
-		},
-		"vs/workbench/api/electron-browser/mainThreadEditors": {
+		"vs/workbench/api/browser/mainThreadEditors": {
 			"diffLeftRightLabel": "{0} ⟷ {1}"
 		},
-		"vs/workbench/api/electron-browser/mainThreadMessageService": {
+		"vs/workbench/api/browser/mainThreadMessageService": {
 			"extensionSource": "{0} (Extension)",
 			"defaultSource": "Extension",
 			"manageExtension": "Gérer l'extension",
 			"cancel": "Annuler",
 			"ok": "OK"
 		},
-		"vs/workbench/api/electron-browser/mainThreadSaveParticipant": {
+		"vs/workbench/api/browser/mainThreadExtensionService": {
+			"reload window": "Impossible d'activer l'extension '{0}', car elle dépend de l'extension '{1}' qui n'est pas chargée. Voulez-vous recharger la fenêtre pour charger l'extension ?",
+			"reload": "Recharger la fenêtre",
+			"disabledDep": "Impossible d'activer l'extension '{0}', car elle dépend de l'extension '{1}' qui est désactivée. Voulez-vous activer l'extension et recharger la fenêtre ?",
+			"enable dep": "Activer et recharger",
+			"uninstalledDep": "Impossible d'activer l'extension '{0}', car elle dépend de l'extension '{1}' qui n'est pas installée. Voulez-vous installer l'extension et recharger la fenêtre ?",
+			"install missing dep": "Installer et recharger",
+			"unknownDep": "Impossible d'activer l'extension '{0}', car elle dépend d'une extension '{1}' inconnue."
+		},
+		"vs/workbench/api/browser/mainThreadSaveParticipant": {
 			"timeout.formatOnSave": "Format avorté lors de l'enregistrement après {0} ms",
 			"codeActionsOnSave.didTimeout": "codeActionsOnSave abandonné au bout de {0} ms",
 			"timeout.onWillSave": "OnWillSaveTextDocument-event avorté après 1750 ms",
 			"saveParticipants": "Exécution de la sauvegarde des participants..."
 		},
-		"vs/workbench/api/electron-browser/mainThreadTask": {
-			"task.label": "{0}: {1}"
-		},
-		"vs/workbench/api/electron-browser/mainThreadWebview": {
-			"errorMessage": "Une erreur s’est produite lors de restauration de a vue : {0}"
-		},
-		"vs/workbench/api/electron-browser/mainThreadWorkspace": {
+		"vs/workbench/api/browser/mainThreadWorkspace": {
 			"folderStatusMessageAddSingleFolder": "L'extension '{0}' a ajouté 1 dossier à l’espace de travail",
 			"folderStatusMessageAddMultipleFolders": "L'extension '{0}' a ajouté {1} dossiers à l’espace de travail",
 			"folderStatusMessageRemoveSingleFolder": "L'extension '{0}' a supprimé 1 dossier de l’espace de travail",
 			"folderStatusMessageRemoveMultipleFolders": "L'extension '{0}' a supprimé {1} dossiers de l’espace de travail",
 			"folderStatusChangeFolder": "L'extension '{0}' a modifié des dossiers de l’espace de travail"
+		},
+		"vs/workbench/api/browser/mainThreadTask": {
+			"task.label": "{0}: {1}"
+		},
+		"vs/workbench/api/electron-browser/mainThreadWebview": {
+			"errorMessage": "Une erreur s’est produite lors de restauration de a vue : {0}"
 		},
 		"vs/workbench/electron-browser/actions/helpActions": {
 			"keybindingsReference": "Référence des raccourcis clavier",
@@ -1874,8 +1937,11 @@
 		},
 		"vs/workbench/browser/actions/workspaceActions": {
 			"openFile": "Ouvrir un fichier...",
+			"openLocalFile": "Ouvrir le fichier local...",
 			"openFolder": "Ouvrir un dossier...",
+			"openLocalFolder": "Ouvrir un dossier local...",
 			"openFileFolder": "Ouvrir...",
+			"openLocalFileFolder": "Ouvrir un dépôt local...",
 			"globalRemoveFolderFromWorkspace": "Supprimer le dossier d’espace de travail...",
 			"saveWorkspaceAsAction": "Enregistrer l’espace de travail sous...",
 			"openWorkspaceAction": "Ouvrir un espace de travail...",
@@ -1959,6 +2025,7 @@
 			"panelInactiveTitleForeground": "Couleur du titre du panneau inactif. Les panneaux se situent sous la zone de l'éditeur et contiennent des affichages comme la sortie et le terminal intégré.",
 			"panelActiveTitleBorder": "Couleur de la bordure du titre du panneau actif. Les panneaux se situent sous la zone de l'éditeur et contiennent des affichages comme la sortie et le terminal intégré.",
 			"panelDragAndDropBackground": "Glissez et déposez la couleur de vos commentaires pour les éléments de titre du panneau. La couleur devrait avoir de la transparence afin que les entrées du panneau puissent encore briller à travers. Les panneaux apparaissent sous la zone de l’éditeur et contiennent des vues comme la sortie et le terminal intégré.",
+			"panelInputBorder": "Bordure de la zone d'entrée des entrées du panneau.",
 			"statusBarForeground": "Couleur de premier plan de la barre d'état quand l'espace de travail est ouvert. La barre d'état est affichée en bas de la fenêtre.",
 			"statusBarNoFolderForeground": "Couleur de premier plan de la barre d'état quand aucun dossier n'est ouvert. La barre d'état est affichée en bas de la fenêtre.",
 			"statusBarBackground": "Couleur d'arrière-plan de la barre d'état quand l'espace de travail est ouvert. La barre d'état est affichée en bas de la fenêtre.",
@@ -2005,32 +2072,6 @@
 		"vs/workbench/browser/quickopen": {
 			"noResultsMatching": "Aucun résultat correspondant",
 			"noResultsFound2": "Résultats introuvables"
-		},
-		"vs/workbench/browser/parts/titlebar/menubarControl": {
-			"mFile": "&&Fichier",
-			"mEdit": "&&Edition",
-			"mSelection": "&&Sélection",
-			"mView": "Affic&&hage",
-			"mGoto": "Attei&&ndre",
-			"mDebug": "&&Déboguer",
-			"mTerminal": "&&Terminal",
-			"mHelp": "&&Aide",
-			"menubar.linuxTitlebarRevertNotification": "Nous avons mis à jour la barre de titre par défaut sur Linux pour utiliser le paramètre natif. Si vous préférez, vous pouvez rétablir le paramètre personnalisé. Plus d'informations sont disponibles dans notre [documentation en ligne](https://go.microsoft.com/fwlink/?linkid=2074137).",
-			"goToSetting": "Ouvrir les paramètres",
-			"menubar.customTitlebarAccessibilityNotification": "La prise en charge de l'accessibilité est activée pour vous. Pour une meilleure expérience d'accessibilité, nous vous recommandons le style de barre de titre personnalisé.",
-			"miMoveSidebarRight": "Déplacer la &&barre latérale vers la droite",
-			"miMoveSidebarLeft": "Déplacer la &&barre latérale vers la gauche",
-			"miHideStatusbar": "&&Masquer la barre d'état",
-			"miShowStatusbar": "Affic&&her la barre d'état",
-			"miHideActivityBar": "Masquer la &&Barre d'activités",
-			"miShowActivityBar": "Afficher la &&Barre d'activités",
-			"checkForUpdates": "Rechercher les &&mises à jour...",
-			"checkingForUpdates": "Recherche des mises à jour...",
-			"download now": "T&&élécharger maintenant",
-			"DownloadingUpdate": "Téléchargement de la mise à jour...",
-			"installUpdate...": "Installer la &&mise à jour...",
-			"installingUpdate": "Installation de la mise à jour...",
-			"restartToUpdate": "Redémarrer pour mettre à jo&&ur..."
 		},
 		"vs/workbench/browser/parts/editor/editorGroupView": {
 			"araLabelGroupActions": "Actions de groupe d'éditeurs",
@@ -2106,13 +2147,36 @@
 			"miFocusBelowGroup": "Regrouper &&dessous",
 			"miSwitchGroup": "Changer de gr&&oupe"
 		},
+		"vs/workbench/browser/parts/titlebar/menubarControl": {
+			"mFile": "&&Fichier",
+			"mEdit": "&&Edition",
+			"mSelection": "&&Sélection",
+			"mView": "Affic&&hage",
+			"mGoto": "Attei&&ndre",
+			"mDebug": "&&Déboguer",
+			"mTerminal": "&&Terminal",
+			"mHelp": "&&Aide",
+			"menubar.linuxTitlebarRevertNotification": "Nous avons mis à jour la barre de titre par défaut sur Linux pour utiliser le paramètre natif. Si vous préférez, vous pouvez rétablir le paramètre personnalisé. Plus d'informations sont disponibles dans notre [documentation en ligne](https://go.microsoft.com/fwlink/?linkid=2074137).",
+			"goToSetting": "Ouvrir les paramètres",
+			"menubar.customTitlebarAccessibilityNotification": "La prise en charge de l'accessibilité est activée pour vous. Pour une meilleure expérience d'accessibilité, nous vous recommandons le style de barre de titre personnalisé.",
+			"miMoveSidebarRight": "Déplacer la &&barre latérale vers la droite",
+			"miMoveSidebarLeft": "Déplacer la &&barre latérale vers la gauche",
+			"miHideStatusbar": "&&Masquer la barre d'état",
+			"miShowStatusbar": "Affic&&her la barre d'état",
+			"miHideActivityBar": "Masquer la &&Barre d'activités",
+			"miShowActivityBar": "Afficher la &&Barre d'activités",
+			"checkForUpdates": "Rechercher les &&mises à jour...",
+			"checkingForUpdates": "Recherche des mises à jour...",
+			"download now": "T&&élécharger maintenant",
+			"DownloadingUpdate": "Téléchargement de la mise à jour...",
+			"installUpdate...": "Installer la &&mise à jour...",
+			"installingUpdate": "Installation de la mise à jour...",
+			"restartToUpdate": "Redémarrer pour &&mettre à jour"
+		},
 		"vs/workbench/browser/parts/activitybar/activitybarActions": {
 			"previousSideBarView": "Vue de barre latérale précédente",
 			"nextSideBarView": "Vue de barre latérale suivante",
 			"view": "Afficher"
-		},
-		"vs/workbench/browser/parts/compositeBar": {
-			"activityBarAriaLabel": "Sélecteur d'affichage actif"
 		},
 		"vs/workbench/browser/parts/compositeBarActions": {
 			"badgeTitle": "{0} - {1}",
@@ -2124,6 +2188,9 @@
 			"keep": "Conserver",
 			"compositeActive": "{0} actif",
 			"toggle": "Afficher/masquer la vue épinglée"
+		},
+		"vs/workbench/browser/parts/compositeBar": {
+			"activityBarAriaLabel": "Sélecteur d'affichage actif"
 		},
 		"vs/workbench/browser/parts/compositePart": {
 			"ariaCompositeToolbarLabel": "{0} actions",
@@ -2163,6 +2230,17 @@
 			"readonlyEditorAriaLabel": "Éditeur de texte en lecture seule.",
 			"untitledFileEditorWithInputAriaLabel": "{0}. Éditeur de texte de fichier sans titre.",
 			"untitledFileEditorAriaLabel": "Éditeur de texte de fichier sans titre."
+		},
+		"vs/workbench/api/common/jsonValidationExtensionPoint": {
+			"contributes.jsonValidation": "Ajoute une configuration de schéma json.",
+			"contributes.jsonValidation.fileMatch": "Modèle de fichier correspondant recherché, par exemple \"package.json\" ou \"*.launch\".",
+			"contributes.jsonValidation.url": "URL de schéma ('http:', 'https:') ou chemin relatif du dossier d'extensions ('./').",
+			"invalid.jsonValidation": "'configuration.jsonValidation' doit être un tableau",
+			"invalid.fileMatch": "'configuration.jsonValidation.fileMatch' doit être défini",
+			"invalid.url": "'configuration.jsonValidation.url' doit être une URL ou un chemin relatif",
+			"invalid.path.1": "'contributes.{0}.url' ({1}) doit être inclus dans le dossier de l'extension ({2}). L'extension risque de ne pas être portable.",
+			"invalid.url.fileschema": "'configuration.jsonValidation.url' est une URL relative non valide : {0}",
+			"invalid.url.schema": "'configuration.jsonValidation.url' doit commencer par 'http:', 'https:' ou './' pour référencer les schémas situés dans l'extension"
 		},
 		"vs/workbench/api/node/extHostExtensionService": {
 			"extensionTestError": "Le chemin {0} ne pointe pas vers un Test Runner d'extension valide."
@@ -2303,7 +2381,7 @@
 			"moveActiveGroupDown": "Déplacer le groupe d'éditeurs vers le bas",
 			"minimizeOtherEditorGroups": "Agrandir le groupe d'éditeurs",
 			"evenEditorGroups": "Réinitialiser la taille des groupes d'éditeurs",
-			"maximizeEditor": "Maximize Editor Group and Hide Side Bar",
+			"maximizeEditor": "Maximiser le groupe d'éditeurs et masquer la barre latérale",
 			"openNextEditor": "Ouvrir l'éditeur suivant",
 			"openPreviousEditor": "Ouvrir l'éditeur précédent",
 			"nextEditorInGroup": "Ouvrir l'éditeur suivant du groupe",
@@ -2367,7 +2445,6 @@
 		},
 		"vs/workbench/api/node/extHostExtensionActivator": {
 			"failedDep1": "Impossible d'activer l'extension '{0}', car elle dépend de l'extension '{1}' qui n'a pas pu être activée.",
-			"unknownDep": "Impossible d'activer l'extension '{0}', car elle dépend de l'extension '{1}' qui n'est pas installée ou est désactivée. Installez ou activez '{1}', et rechargez la fenêtre.",
 			"activationError": "L'activation de l'extension '{0}' a échoué: {1}. "
 		},
 		"vs/workbench/api/node/extHost.api.impl": {
@@ -2405,10 +2482,6 @@
 			"treeView.notRegistered": "Aucune arborescence avec l'ID « {0} » n'est enregistrée.",
 			"treeView.duplicateElement": "L'élément avec l'id {0} est déjà inscrit"
 		},
-		"vs/workbench/browser/parts/notifications/notificationsViewer": {
-			"notificationActions": "Actions de notification",
-			"notificationSource": "Source : {0}"
-		},
 		"vs/workbench/browser/parts/editor/breadcrumbs": {
 			"title": "Navigation par fil d’Ariane",
 			"enabled": "Activez/désactivez les barres de navigation.",
@@ -2424,6 +2497,23 @@
 			"symbolSortOrder.position": "Affichez la structure des symboles par position de fichier.",
 			"symbolSortOrder.name": "Affichez la structure des symboles par ordre alphabétique.",
 			"symbolSortOrder.type": "Affichez la structure des symboles par type de symbole."
+		},
+		"vs/workbench/browser/parts/notifications/notificationsViewer": {
+			"notificationActions": "Actions de notification",
+			"notificationSource": "Source : {0}"
+		},
+		"vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution": {
+			"no.item": "Aucun résultat",
+			"title": "Afficher un aperçu de la hiérarchie d'appels"
+		},
+		"vs/workbench/contrib/callHierarchy/browser/callHierarchyPeek": {
+			"toggle.from": "Affichage des appels",
+			"toggle.to": "Affichage des appelants",
+			"tree.aria": "Hiérarchie d'appels",
+			"meta": " – {0}",
+			"title.loading": "Chargement en cours...",
+			"empt.callsFrom": "Aucun appel de '{0}'",
+			"empt.callsTo": "Aucun appel à '{0}'"
 		},
 		"vs/workbench/contrib/cli/node/cli.contribution": {
 			"install": "Installer la commande '{0}' dans PATH",
@@ -2523,13 +2613,13 @@
 			"miMultiCursorCmd": "Utiliser Cmd+Clic pour l'option multicurseur",
 			"miMultiCursorCtrl": "Utiliser Ctrl+Clic pour l'option multicurseur"
 		},
-		"vs/workbench/contrib/codeEditor/browser/toggleRenderControlCharacter": {
-			"toggleRenderControlCharacters": "Affichage : Activer/désactiver les caractères de contrôle",
-			"miToggleRenderControlCharacters": "Activer/désactiver les &&caractères de contrôle"
-		},
 		"vs/workbench/contrib/codeEditor/browser/toggleRenderWhitespace": {
 			"toggleRenderWhitespace": "Affichage : Activer/désactiver l'affichage des espaces",
 			"miToggleRenderWhitespace": "Activer/désactiver &&Restituer l'espace"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleRenderControlCharacter": {
+			"toggleRenderControlCharacters": "Affichage : Activer/désactiver les caractères de contrôle",
+			"miToggleRenderControlCharacters": "Activer/désactiver les &&caractères de contrôle"
 		},
 		"vs/workbench/contrib/codeEditor/browser/toggleWordWrap": {
 			"toggle.wordwrap": "Afficher : activer/désactiver le retour automatique à la ligne",
@@ -2541,38 +2631,39 @@
 		"vs/workbench/contrib/codeinset/electron-browser/codeInset.contribution": {
 			"editor.codeInsets": "Activer/désactiver les incrustations de code de l'éditeur"
 		},
-		"vs/workbench/contrib/comments/electron-browser/comments.contribution": {
+		"vs/workbench/contrib/comments/browser/comments.contribution": {
 			"commentsConfigurationTitle": "Commentaires",
 			"openComments": "Contrôle quand le panneau des composants doit s'ouvrir."
 		},
-		"vs/workbench/contrib/comments/electron-browser/commentsEditorContribution": {
+		"vs/workbench/contrib/comments/browser/commentsEditorContribution": {
+			"commentThreadAddFailure": "L'ajout d'un nouveau thread de commentaires a échoué : {0}.",
 			"nextCommentThreadAction": "Aller au thread de commentaires suivant"
 		},
-		"vs/workbench/contrib/comments/electron-browser/commentThreadWidget": {
+		"vs/workbench/contrib/comments/browser/commentGlyphWidget": {
+			"editorGutterCommentRangeForeground": "Couleur de décoration de gouttière d'éditeur pour commenter des plages."
+		},
+		"vs/workbench/contrib/comments/browser/commentThreadWidget": {
 			"label.collapse": "Réduire",
 			"commentCreationError": "L'ajout d’un commentaire a échoué : {0}.",
 			"commentCreationDefaultError": "L'ajout d’un commentaire a échoué. Veuillez réessayer ou signaler un problème avec l’extension si le problème persiste.",
 			"commentThreadParticipants": "Participants : {0}",
 			"startThread": "Démarrer la discussion",
 			"reply": "Répondre ...",
-			"newComment": "Type a new comment"
+			"newComment": "Taper un nouveau commentaire"
 		},
-		"vs/workbench/contrib/comments/electron-browser/commentGlyphWidget": {
-			"editorGutterCommentRangeForeground": "Couleur de décoration de gouttière d'éditeur pour commenter des plages."
+		"vs/workbench/contrib/comments/browser/commentsTreeViewer": {
+			"imageWithLabel": "Image : {0}",
+			"image": "Image"
 		},
 		"vs/workbench/contrib/comments/common/commentModel": {
 			"noComments": "Aucun commentaire sur cette révision."
 		},
-		"vs/workbench/contrib/comments/electron-browser/commentsTreeViewer": {
-			"imageWithLabel": "Image : {0}",
-			"image": "Image"
-		},
-		"vs/workbench/contrib/comments/electron-browser/commentNode": {
+		"vs/workbench/contrib/comments/browser/commentNode": {
 			"label.updateComment": "Mettre à jour le commentaire",
 			"label.updatingComment": "Mise à jour du commentaire...",
-			"commentToggleReaction": "Toggle Reaction",
-			"commentToggleReactionError": "Toggling the comment reaction failed: {0}.",
-			"commentToggleReactionDefaultError": "Toggling the comment reaction failed",
+			"commentToggleReaction": "Activer/désactiver la réaction",
+			"commentToggleReactionError": "L'activation/la désactivation de la réaction de commentaire a échoué : {0}.",
+			"commentToggleReactionDefaultError": "L'activation/la désactivation de la réaction de commentaire a échoué",
 			"commentAddReaction": "Ajouter une réaction",
 			"commentAddReactionError": "La suppression de la réaction de commentaire a échoué : {0}.",
 			"commentAddReactionDefaultError": "La suppression de la réaction de commentaire a échoué",
@@ -2587,16 +2678,8 @@
 			"label.edit": "Modifier",
 			"label.cancel": "Annuler"
 		},
-		"vs/workbench/contrib/comments/electron-browser/reactionsAction": {
+		"vs/workbench/contrib/comments/browser/reactionsAction": {
 			"pickReactions": "Choisir des réactions..."
-		},
-		"vs/workbench/contrib/debug/browser/debugQuickOpen": {
-			"entryAriaLabel": "{0}, débogage",
-			"debugAriaLabel": "Tapez le nom d'une configuration de lancement à exécuter.",
-			"addConfigTo": "Ajouter une configuration ({0})...",
-			"addConfiguration": "Ajouter une configuration...",
-			"noConfigurationsMatching": "Aucune configuration de débogage correspondante",
-			"noConfigurationsFound": "Configurations de débogage introuvables. Créez un fichier 'launch.json'."
 		},
 		"vs/workbench/contrib/debug/electron-browser/debug.contribution": {
 			"toggleDebugViewlet": "Afficher le débogage",
@@ -2610,6 +2693,16 @@
 			"loadedScripts": "Scripts Chargés",
 			"view": "Afficher",
 			"debugCategory": "déboguer",
+			"restartDebug": "Redémarrer",
+			"stepOverDebug": "Pas à pas principal",
+			"stepIntoDebug": "Pas à pas détaillé",
+			"stepOutDebug": "Pas à pas sortant",
+			"pauseDebug": "Pause",
+			"disconnect": "Déconnecter",
+			"stop": "Arrêter",
+			"continueDebug": "Continuer",
+			"terminateThread": "Terminer le thread",
+			"debugFocusConsole": "Mettre le focus sur la vue de la Console de débogage",
 			"debugCommands": "Configuration de débogage",
 			"debugConfigurationTitle": "déboguer",
 			"allowBreakpointsEverywhere": "Permettre de définir des points d’arrêt dans n’importe quel fichier.",
@@ -2626,6 +2719,10 @@
 			"debug.console.fontFamily": "Contrôle la famille de polices dans la console de débogage.",
 			"debug.console.lineHeight": "Contrôle la hauteur de ligne en pixels dans la console de débogage. Utilisez 0 pour calculer la hauteur de ligne à partir de la taille de police.",
 			"launch": "Configuration de lancement du débogage global. Doit être utilisée à la place de 'launch.json' qui est partagé entre les espaces de travail.",
+			"stepBackDebug": "Revenir en arrière",
+			"reverseContinue": "Inverser",
+			"restartFrame": "Redémarrer le frame",
+			"copyStackTrace": "Copier la pile des appels",
 			"miViewDebug": "&&Déboguer",
 			"miToggleDebugConsole": "Console de dé&&bogage",
 			"miStartDebugging": "&&Démarrer le débogage",
@@ -2648,6 +2745,14 @@
 			"miDisableAllBreakpoints": "Désacti&&ver tous les points d'arrêt",
 			"miRemoveAllBreakpoints": "Supprimer t&&ous les points d'arrêt",
 			"miInstallAdditionalDebuggers": "&&Installer des débogueurs supplémentaires..."
+		},
+		"vs/workbench/contrib/debug/browser/debugQuickOpen": {
+			"entryAriaLabel": "{0}, débogage",
+			"debugAriaLabel": "Tapez le nom d'une configuration de lancement à exécuter.",
+			"addConfigTo": "Ajouter une configuration ({0})...",
+			"addConfiguration": "Ajouter une configuration...",
+			"noConfigurationsMatching": "Aucune configuration de débogage correspondante",
+			"noConfigurationsFound": "Configurations de débogage introuvables. Créez un fichier 'launch.json'."
 		},
 		"vs/workbench/contrib/debug/browser/debugEditorContribution": {
 			"logPoint": "Point de journalisation",
@@ -2681,9 +2786,15 @@
 			"cancel": "Annuler",
 			"addConfiguration": "Ajouter une configuration..."
 		},
+		"vs/workbench/contrib/debug/browser/debugViewlet": {
+			"startAdditionalSession": "Démarrer une session supplémentaire",
+			"debugConsoleAction": "Console de débogage"
+		},
 		"vs/workbench/contrib/debug/browser/repl": {
 			"replAriaLabel": "Panneau REPL (Read Eval Print Loop)",
+			"copy": "Copier",
 			"copyAll": "Copier tout",
+			"collapse": "Réduire tout",
 			"startDebugFirst": "Démarrez une session de débogage pour évaluer des expressions",
 			"stateCapture": "L'état de l'objet est capturé à partir de la première évaluation",
 			"replVariableAriaLabel": "La variable {0} a la valeur {1}, boucle REPL (Read Eval Print Loop), débogage",
@@ -2696,53 +2807,8 @@
 			"clearRepl": "Effacer la console",
 			"debugConsoleCleared": "La console de débogage a été effacée"
 		},
-		"vs/workbench/contrib/debug/browser/debugViewlet": {
-			"startAdditionalSession": "Démarrer une session supplémentaire"
-		},
 		"vs/workbench/contrib/debug/common/debug": {
 			"internalConsoleOptions": "Contrôle le moment où la console de débogage interne doit s’ouvrir."
-		},
-		"vs/workbench/contrib/debug/browser/debugActions": {
-			"openLaunchJson": "Ouvrir {0}",
-			"launchJsonNeedsConfigurtion": "Configurer ou corriger 'launch.json'",
-			"noFolderDebugConfig": "Ouvrez d'abord un dossier pour effectuer une configuration de débogage avancée.",
-			"startDebug": "Démarrer le débogage",
-			"startWithoutDebugging": "Exécuter sans débogage",
-			"selectAndStartDebugging": "Sélectionner et démarrer le débogage",
-			"restartDebug": "Redémarrer",
-			"reconnectDebug": "Se reconnecter",
-			"stepOverDebug": "Pas à pas principal",
-			"stepIntoDebug": "Pas à pas détaillé",
-			"stepOutDebug": "Pas à pas sortant",
-			"stopDebug": "Arrêter",
-			"disconnectDebug": "Déconnecter",
-			"continueDebug": "Continuer",
-			"pauseDebug": "Pause",
-			"terminateThread": "Terminer le thread",
-			"restartFrame": "Redémarrer le frame",
-			"removeBreakpoint": "Supprimer un point d'arrêt",
-			"removeAllBreakpoints": "Supprimer tous les points d'arrêt",
-			"enableAllBreakpoints": "Activer tous les points d'arrêt",
-			"disableAllBreakpoints": "Désactiver tous les points d'arrêt",
-			"activateBreakpoints": "Activer les points d'arrêt",
-			"deactivateBreakpoints": "Désactiver les points d'arrêt",
-			"reapplyAllBreakpoints": "Réappliquer tous les points d'arrêt",
-			"addFunctionBreakpoint": "Ajouter un point d'arrêt sur fonction",
-			"setValue": "Définir la valeur",
-			"addWatchExpression": "Ajouter une expression",
-			"editWatchExpression": "Modifier l'expression",
-			"addToWatchExpressions": "Ajouter à la fenêtre Espion",
-			"removeWatchExpression": "Supprimer une expression",
-			"removeAllWatchExpressions": "Supprimer toutes les expressions",
-			"debugConsoleAction": "Console de débogage",
-			"debugFocusConsole": "Mettre le focus sur la vue de la Console de débogage",
-			"focusSession": "Focus Session",
-			"stepBackDebug": "Revenir en arrière",
-			"reverseContinue": "Inverser",
-			"copyValue": "Copier la valeur",
-			"copyAsExpression": "Copier en tant qu'Expression",
-			"copy": "Copier",
-			"copyStackTrace": "Copier la pile des appels"
 		},
 		"vs/workbench/contrib/debug/browser/breakpointsView": {
 			"breakpointsSection": "Section des points d'arrêt",
@@ -2785,7 +2851,27 @@
 			"topStackFrameLineHighlight": "Couleur d'arrière-plan de la mise en surbrillance de la ligne au niveau du frame de pile le plus haut.",
 			"focusedStackFrameLineHighlight": "Couleur d'arrière-plan de la mise en surbrillance de la ligne au niveau du frame de pile qui a le focus."
 		},
-		"vs/workbench/contrib/debug/browser/debugToolbar": {
+		"vs/workbench/contrib/debug/browser/debugActions": {
+			"openLaunchJson": "Ouvrir {0}",
+			"launchJsonNeedsConfigurtion": "Configurer ou corriger 'launch.json'",
+			"noFolderDebugConfig": "Ouvrez d'abord un dossier pour effectuer une configuration de débogage avancée.",
+			"startDebug": "Démarrer le débogage",
+			"startWithoutDebugging": "Exécuter sans débogage",
+			"selectAndStartDebugging": "Sélectionner et démarrer le débogage",
+			"removeBreakpoint": "Supprimer un point d'arrêt",
+			"removeAllBreakpoints": "Supprimer tous les points d'arrêt",
+			"enableAllBreakpoints": "Activer tous les points d'arrêt",
+			"disableAllBreakpoints": "Désactiver tous les points d'arrêt",
+			"activateBreakpoints": "Activer les points d'arrêt",
+			"deactivateBreakpoints": "Désactiver les points d'arrêt",
+			"reapplyAllBreakpoints": "Réappliquer tous les points d'arrêt",
+			"addFunctionBreakpoint": "Ajouter un point d'arrêt sur fonction",
+			"addWatchExpression": "Ajouter une expression",
+			"removeAllWatchExpressions": "Supprimer toutes les expressions",
+			"focusSession": "Focus Session",
+			"copyValue": "Copier la valeur"
+		},
+		"vs/workbench/contrib/debug/browser/debugToolBar": {
 			"debugToolBarBackground": "Couleur d'arrière-plan de la barre d'outils de débogage.",
 			"debugToolBarBorder": "Couleur de bordure de la barre d'outils de débogage."
 		},
@@ -2793,6 +2879,12 @@
 			"statusBarDebuggingBackground": "Couleur d'arrière-plan de la barre d'état quand un programme est en cours de débogage. La barre d'état est affichée en bas de la fenêtre",
 			"statusBarDebuggingForeground": "Couleur de premier plan de la barre d'état quand un programme est en cours de débogage. La barre d'état est affichée en bas de la fenêtre",
 			"statusBarDebuggingBorder": "Couleur de la bordure qui sépare à l’éditeur et la barre latérale quand un programme est en cours de débogage. La barre d’état s’affiche en bas de la fenêtre"
+		},
+		"vs/workbench/contrib/debug/browser/debugCommands": {
+			"noFolderDebugConfig": "Ouvrez d'abord un dossier pour effectuer une configuration de débogage avancée.",
+			"inlineBreakpoint": "Point d'arrêt inline",
+			"debug": "déboguer",
+			"addInlineBreakpoint": "Ajouter un point d’arrêt Inline"
 		},
 		"vs/workbench/contrib/debug/electron-browser/debugService": {
 			"configurationAlreadyRunning": "Une configuration de débogage \"{0}\" est déjà en cours d'exécution.",
@@ -2823,12 +2915,6 @@
 			"breakpointAdded": "Point d'arrêt ajouté, ligne {0}, fichier {1}",
 			"breakpointRemoved": "Point d'arrêt supprimé, ligne {0}, fichier {1}"
 		},
-		"vs/workbench/contrib/debug/browser/debugCommands": {
-			"noFolderDebugConfig": "Ouvrez d'abord un dossier pour effectuer une configuration de débogage avancée.",
-			"inlineBreakpoint": "Point d'arrêt inline",
-			"debug": "déboguer",
-			"addInlineBreakpoint": "Ajouter un point d’arrêt Inline"
-		},
 		"vs/workbench/contrib/debug/browser/debugStatus": {
 			"selectAndStartDebug": "Sélectionner et démarrer la configuration de débogage"
 		},
@@ -2856,6 +2942,8 @@
 		"vs/workbench/contrib/debug/browser/watchExpressionsView": {
 			"watchExpressionsSection": "Section des expressions espionnées",
 			"watchAriaTreeLabel": "Déboguer les expressions espionnées",
+			"editWatchExpression": "Modifier l'expression",
+			"removeWatchExpression": "Supprimer une expression",
 			"watchExpressionInputAriaLabel": "Tapez l'expression à espionner",
 			"watchExpressionPlaceholder": "Expression à espionner",
 			"watchExpressionAriaLabel": "{0} valeur {1}, espion, débogage",
@@ -2864,6 +2952,9 @@
 		"vs/workbench/contrib/debug/browser/variablesView": {
 			"variablesSection": "Section des variables",
 			"variablesAriaTreeLabel": "Déboguer les variables",
+			"setValue": "Définir la valeur",
+			"copyAsExpression": "Copier en tant qu'Expression",
+			"addToWatchExpressions": "Ajouter à la fenêtre Espion",
 			"variableValueAriaLabel": "Tapez une nouvelle valeur de variable",
 			"variableScopeAriaLabel": "Portée {0}, variables, débogage",
 			"variableAriaLabel": "{0} valeur {1}, variables, débogage"
@@ -2910,12 +3001,6 @@
 		"vs/workbench/contrib/debug/browser/linkDetector": {
 			"fileLinkMac": "Cliquez pour suivre (Commande + clic permet d'ouvrir sur le côté)",
 			"fileLink": "Cliquez pour suivre (Ctrl + clic permet d'ouvrir sur le côté)"
-		},
-		"vs/workbench/contrib/debug/node/debugAdapter": {
-			"debugAdapterBinNotFound": "L'exécutable d'adaptateur de débogage '{0}' n'existe pas.",
-			"debugAdapterCannotDetermineExecutable": "Impossible de déterminer l'exécutable pour l'adaptateur de débogage '{0}'.",
-			"unableToLaunchDebugAdapter": "Impossible de lancer l'adaptateur de débogage à partir de '{0}'.",
-			"unableToLaunchDebugAdapterNoArgs": "Impossible de lancer l'adaptateur de débogage."
 		},
 		"vs/workbench/contrib/debug/electron-browser/debugConfigurationManager": {
 			"debugNoType": "Le 'type' de débogueur ne peut pas être omis et doit être de type 'string'.",
@@ -2991,6 +3076,12 @@
 		"vs/workbench/contrib/debug/electron-browser/rawDebugSession": {
 			"moreInfo": "Informations"
 		},
+		"vs/workbench/contrib/debug/node/debugAdapter": {
+			"debugAdapterBinNotFound": "L'exécutable d'adaptateur de débogage '{0}' n'existe pas.",
+			"debugAdapterCannotDetermineExecutable": "Impossible de déterminer l'exécutable pour l'adaptateur de débogage '{0}'.",
+			"unableToLaunchDebugAdapter": "Impossible de lancer l'adaptateur de débogage à partir de '{0}'.",
+			"unableToLaunchDebugAdapterNoArgs": "Impossible de lancer l'adaptateur de débogage."
+		},
 		"vs/workbench/contrib/debug/node/terminals": {
 			"console.title": "Console VS Code",
 			"mac.terminal.script.failed": "Échec du script '{0}'. Code de sortie : {1}",
@@ -3022,13 +3113,10 @@
 			"extensionsCloseExtensionDetailsOnViewChange": "Si cette option est activée, les éditeurs avec les détails d'extension sont automatiquement fermés quand vous quittez l'affichage Extensions.",
 			"miOpenKeymapExtensions": "&&Mappages de touches",
 			"miPreferencesExtensions": "&&Extensions",
-			"miViewExtensions": "E&&xtensions"
-		},
-		"vs/workbench/contrib/extensions/browser/extensionsQuickOpen": {
-			"manage": "Appuyez sur Entrée pour gérer vos extensions.",
-			"install": "Appuyez sur entrée pour installer '{0}' depuis le Marketplace.",
-			"searchFor": "Appuyez sur Entrée pour rechercher '{0}' dans le Marketplace.",
-			"noExtensionsToInstall": "Tapez un nom d'extension"
+			"miViewExtensions": "E&&xtensions",
+			"workbench.extensions.installExtension.description": "Install the given extension",
+			"workbench.extensions.installExtension.arg.name": "Extension id or VSIX resource uri",
+			"notFound": "Extension '{0}' not found."
 		},
 		"vs/workbench/contrib/extensions/electron-browser/extensionsViewlet": {
 			"marketPlace": "Marketplace",
@@ -3054,6 +3142,13 @@
 			"outdatedExtensions": "{0} extensions obsolètes",
 			"malicious warning": "Nous avons désinstallé '{0}' qui a été signalé comme problématique.",
 			"reloadNow": "Recharger maintenant"
+		},
+		"vs/workbench/contrib/extensions/browser/extensionsQuickOpen": {
+			"manage": "Appuyez sur Entrée pour gérer vos extensions.",
+			"notfound": "Extension '{0}' not found in the Marketplace.",
+			"install": "Appuyez sur entrée pour installer '{0}' depuis le Marketplace.",
+			"searchFor": "Appuyez sur Entrée pour rechercher '{0}' dans le Marketplace.",
+			"noExtensionsToInstall": "Tapez un nom d'extension"
 		},
 		"vs/workbench/contrib/extensions/electron-browser/extensionTipsService": {
 			"neverShowAgain": "Ne plus afficher",
@@ -3087,7 +3182,108 @@
 			"installConfirmation": "Voulez-vous installer l'extension '{0}' ?",
 			"install": "Installer"
 		},
-		"vs/workbench/contrib/extensions/common/extensionsInput": {},
+		"vs/workbench/contrib/extensions/common/extensionsInput": {
+			"extensionsInputName": "Extension: {0}"
+		},
+		"vs/workbench/contrib/extensions/common/extensionsFileTemplate": {
+			"app.extensions.json.title": "Extensions",
+			"app.extensions.json.recommendations": "Liste des extensions qui doivent être recommandées pour les utilisateurs de cet espace de travail. L'identificateur d'une extension est toujours '${publisher}.${name}'. Par exemple : 'vscode.csharp'.",
+			"app.extension.identifier.errorMessage": "Format attendu : '${publisher}.${name}'. Exemple : 'vscode.csharp'.",
+			"app.extensions.json.unwantedRecommendations": "Liste des extensions recommandées par VS Code qui ne doivent pas être recommandées pour les utilisateurs de cet espace de travail. L'identificateur d'une extension est toujours '${publisher}.${name}'. Par exemple : 'vscode.csharp'."
+		},
+		"vs/workbench/contrib/extensions/common/extensionsUtils": {
+			"disableOtherKeymapsConfirmation": "Désactiver les autres mappages de touches ({0}) pour éviter les conflits de combinaisons de touches ?",
+			"yes": "Oui",
+			"no": "Non"
+		},
+		"vs/workbench/contrib/extensions/electron-browser/extensionEditor": {
+			"name": "Nom de l'extension",
+			"extension id": "Identificateur d'extension",
+			"preview": "Aperçu",
+			"builtin": "Intégrée",
+			"publisher": "Nom de l'éditeur",
+			"install count": "Nombre d'installations",
+			"rating": "Évaluation",
+			"repository": "Dépôt",
+			"license": "Licence",
+			"details": "Détails",
+			"detailstooltip": "Détails de l’extension, affichés depuis le fichier 'README.md' de l’extension",
+			"extensionPack": "Pack d'extension",
+			"extensionsPack": "Ensemble d’extensions qui peuvent être installées ensemble",
+			"contributions": "Contributions",
+			"contributionstooltip": "Listes des contributions à VS Code par cette extension",
+			"changelog": "Journal des modifications",
+			"changelogtooltip": "Historique de mise à jour de de l'extension, affiché depuis le fichier 'CHANGELOG.md' de l’extension",
+			"dependencies": "Dépendances",
+			"dependenciestooltip": "Répertorie les extensions dont dépend cette extension",
+			"recommendationHasBeenIgnored": "Vous avez choisi de ne pas recevoir de recommandations pour cette extension.",
+			"noReadme": "Aucun fichier README disponible.",
+			"noChangelog": "Aucun Changelog disponible.",
+			"noContributions": "Aucune contribution",
+			"noDependencies": "Aucune dépendance",
+			"settings": "Paramètres ({0})",
+			"setting name": "Nom",
+			"description": "Description",
+			"default": "Par défaut",
+			"debuggers": "Débogueurs ({0})",
+			"debugger name": "Nom",
+			"debugger type": "Type",
+			"viewContainers": "Voir les conteneurs ({0})",
+			"view container id": "ID",
+			"view container title": "Titre",
+			"view container location": "Emplacement",
+			"views": "Vues ({0})",
+			"view id": "ID",
+			"view name": "Nom",
+			"view location": "Emplacement",
+			"localizations": "Localisations ({0})",
+			"localizations language id": "ID de langue",
+			"localizations language name": "Nom de la langue",
+			"localizations localized language name": "Nom de la langue (localisé)",
+			"colorThemes": "Thèmes de couleur ({0})",
+			"iconThemes": "Thèmes d'icône ({0})",
+			"colors": "Couleurs ({0})",
+			"colorId": "ID",
+			"defaultDark": "Défaut pour le thème sombre",
+			"defaultLight": "Défaut pour le thème clair",
+			"defaultHC": "Défaut pour le thème de contraste élevé",
+			"JSON Validation": "Validation JSON ({0})",
+			"fileMatch": "Correspondance de fichier",
+			"schema": "Schéma",
+			"commands": "Commandes ({0})",
+			"command name": "Nom",
+			"keyboard shortcuts": "Raccourcis clavier",
+			"menuContexts": "Contextes de menu",
+			"languages": "Langages ({0})",
+			"language id": "ID",
+			"language name": "Nom",
+			"file extensions": "Extensions de fichier",
+			"grammar": "Grammaire",
+			"snippets": "Extraits"
+		},
+		"vs/workbench/contrib/extensions/electron-browser/runtimeExtensionsEditor": {
+			"starActivation": "Activées au démarrage",
+			"workspaceContainsGlobActivation": "Activées parce qu'il existe un fichier correspondant à {0} dans votre espace de travail",
+			"workspaceContainsFileActivation": "Activées parce que un fichier {0} existe dans votre espace de travail",
+			"workspaceContainsTimeout": "Activés car la recherche de {0} a pris trop de temps",
+			"languageActivation": "Activées parce que vous avez ouvert un fichier {0}",
+			"workspaceGenericActivation": "Activée le {0}",
+			"unresponsive.title": "L'extension a entraîné le gel de l'hôte d'extension.",
+			"errors": " {0} erreurs non détectées",
+			"disable workspace": "Désactiver (espace de travail)",
+			"disable": "Désactiver",
+			"showRuntimeExtensions": "Afficher les extensions en cours d'exécution",
+			"reportExtensionIssue": "Signaler un problème",
+			"debugExtensionHost": "Démarrer le débogage d'hôte d'Extension",
+			"restart1": "Profiler les extensions",
+			"restart2": "Un redémarrage est nécessaire pour profiler les extensions. Voulez-vous redémarrer '{0}' maintenant ?",
+			"restart3": "Redémarrer",
+			"cancel": "Annuler",
+			"debugExtensionHost.launch.name": "Attacher l'hôte d'extension",
+			"extensionHostProfileStart": "Démarrer le profilage d'hôte d'extension",
+			"stopExtensionHostProfileStart": "Arrêter le profilage d'hôte d'extension",
+			"saveExtensionHostProfile": "Enregistrer le profilage d'hôte d'extension"
+		},
 		"vs/workbench/contrib/extensions/electron-browser/extensionsActions": {
 			"download": "Télécharger manuellement",
 			"install vsix": "Une fois téléchargé, installez manuellement le VSIX de '{0}'.",
@@ -3222,105 +3418,6 @@
 			"extensionButtonProminentForeground": "Couleur d'arrière-plan du bouton pour l'extension d'actions importantes (par ex., le bouton d'installation).",
 			"extensionButtonProminentHoverBackground": "Couleur d'arrière-plan du pointage de bouton pour l'extension d'actions importantes (par ex., le bouton d'installation)."
 		},
-		"vs/workbench/contrib/extensions/electron-browser/extensionEditor": {
-			"name": "Nom de l'extension",
-			"extension id": "Identificateur d'extension",
-			"preview": "Aperçu",
-			"builtin": "Intégrée",
-			"publisher": "Nom de l'éditeur",
-			"install count": "Nombre d'installations",
-			"rating": "Évaluation",
-			"repository": "Dépôt",
-			"license": "Licence",
-			"details": "Détails",
-			"detailstooltip": "Détails de l’extension, affichés depuis le fichier 'README.md' de l’extension",
-			"extensionPack": "Pack d'extension",
-			"extensionsPack": "Ensemble d’extensions qui peuvent être installées ensemble",
-			"contributions": "Contributions",
-			"contributionstooltip": "Listes des contributions à VS Code par cette extension",
-			"changelog": "Journal des modifications",
-			"changelogtooltip": "Historique de mise à jour de de l'extension, affiché depuis le fichier 'CHANGELOG.md' de l’extension",
-			"dependencies": "Dépendances",
-			"dependenciestooltip": "Répertorie les extensions dont dépend cette extension",
-			"recommendationHasBeenIgnored": "Vous avez choisi de ne pas recevoir de recommandations pour cette extension.",
-			"noReadme": "Aucun fichier README disponible.",
-			"noChangelog": "Aucun Changelog disponible.",
-			"noContributions": "Aucune contribution",
-			"noDependencies": "Aucune dépendance",
-			"settings": "Paramètres ({0})",
-			"setting name": "Nom",
-			"description": "Description",
-			"default": "Par défaut",
-			"debuggers": "Débogueurs ({0})",
-			"debugger name": "Nom",
-			"debugger type": "Type",
-			"viewContainers": "Voir les conteneurs ({0})",
-			"view container id": "ID",
-			"view container title": "Titre",
-			"view container location": "Emplacement",
-			"views": "Vues ({0})",
-			"view id": "ID",
-			"view name": "Nom",
-			"view location": "Emplacement",
-			"localizations": "Localisations ({0})",
-			"localizations language id": "ID de langue",
-			"localizations language name": "Nom de la langue",
-			"localizations localized language name": "Nom de la langue (localisé)",
-			"colorThemes": "Thèmes de couleur ({0})",
-			"iconThemes": "Thèmes d'icône ({0})",
-			"colors": "Couleurs ({0})",
-			"colorId": "ID",
-			"defaultDark": "Défaut pour le thème sombre",
-			"defaultLight": "Défaut pour le thème clair",
-			"defaultHC": "Défaut pour le thème de contraste élevé",
-			"JSON Validation": "Validation JSON ({0})",
-			"fileMatch": "Correspondance de fichier",
-			"schema": "Schéma",
-			"commands": "Commandes ({0})",
-			"command name": "Nom",
-			"keyboard shortcuts": "Raccourcis clavier",
-			"menuContexts": "Contextes de menu",
-			"languages": "Langages ({0})",
-			"language id": "ID",
-			"language name": "Nom",
-			"file extensions": "Extensions de fichier",
-			"grammar": "Grammaire",
-			"snippets": "Extraits"
-		},
-		"vs/workbench/contrib/extensions/common/extensionsFileTemplate": {
-			"app.extensions.json.title": "Extensions",
-			"app.extensions.json.recommendations": "Liste des extensions qui doivent être recommandées pour les utilisateurs de cet espace de travail. L'identificateur d'une extension est toujours '${publisher}.${name}'. Par exemple : 'vscode.csharp'.",
-			"app.extension.identifier.errorMessage": "Format attendu : '${publisher}.${name}'. Exemple : 'vscode.csharp'.",
-			"app.extensions.json.unwantedRecommendations": "Liste des extensions recommandées par VS Code qui ne doivent pas être recommandées pour les utilisateurs de cet espace de travail. L'identificateur d'une extension est toujours '${publisher}.${name}'. Par exemple : 'vscode.csharp'."
-		},
-		"vs/workbench/contrib/extensions/common/extensionsUtils": {
-			"disableOtherKeymapsConfirmation": "Désactiver les autres mappages de touches ({0}) pour éviter les conflits de combinaisons de touches ?",
-			"yes": "Oui",
-			"no": "Non"
-		},
-		"vs/workbench/contrib/extensions/electron-browser/runtimeExtensionsEditor": {
-			"starActivation": "Activées au démarrage",
-			"workspaceContainsGlobActivation": "Activées parce qu'il existe un fichier correspondant à {0} dans votre espace de travail",
-			"workspaceContainsFileActivation": "Activées parce que un fichier {0} existe dans votre espace de travail",
-			"workspaceContainsTimeout": "Activés car la recherche de {0} a pris trop de temps",
-			"languageActivation": "Activées parce que vous avez ouvert un fichier {0}",
-			"workspaceGenericActivation": "Activée le {0}",
-			"unresponsive.title": "L'extension a entraîné le gel de l'hôte d'extension.",
-			"errors": " {0} erreurs non détectées",
-			"disable workspace": "Désactiver (espace de travail)",
-			"disable": "Désactiver",
-			"showRuntimeExtensions": "Afficher les extensions en cours d'exécution",
-			"reportExtensionIssue": "Signaler un problème",
-			"debugExtensionHost": "Démarrer le débogage d'hôte d'Extension",
-			"restart1": "Profiler les extensions",
-			"restart2": "Un redémarrage est nécessaire pour profiler les extensions. Voulez-vous redémarrer '{0}' maintenant ?",
-			"restart3": "Redémarrer",
-			"cancel": "Annuler",
-			"debugExtensionHost.launch.name": "Attacher l'hôte d'extension",
-			"extensionHostProfileStart": "Démarrer le profilage d'hôte d'extension",
-			"stopExtensionHostProfileStart": "Arrêter le profilage d'hôte d'extension",
-			"saveExtensionHostProfile": "Enregistrer le profilage d'hôte d'extension"
-		},
 		"vs/workbench/contrib/extensions/electron-browser/extensionProfileService": {
 			"restart1": "Profiler les extensions",
 			"restart2": "Un redémarrage est nécessaire pour profiler les extensions. Voulez-vous redémarrer '{0}' maintenant ?",
@@ -3337,11 +3434,21 @@
 			"show": "Afficher les extensions",
 			"report": "Signaler un problème"
 		},
+		"vs/workbench/contrib/extensions/electron-browser/extensionsDependencyChecker": {
+			"auto install missing deps": "Install Missing Dependencies",
+			"finished installing missing deps": "Finished installing missing dependencies. Please reload the window now.",
+			"reload": "Realod Window",
+			"no missing deps": "There are no missing dependencies to install."
+		},
 		"vs/workbench/contrib/extensions/electron-browser/extensionsViews": {
 			"extensions": "Extensions",
 			"galleryError": "Nous ne pouvons pas vous connecter sur le Marketplace des Extensions en ce moment, veuillez s’il vous plaît essayer à nouveau plus tard.",
 			"no extensions found": "Extensions introuvables.",
 			"suggestProxyError": "Marketplace a retourné 'ECONNREFUSED'. Vérifiez le paramètre 'http.proxy'."
+		},
+		"vs/workbench/contrib/extensions/browser/extensionsViewer": {
+			"error": "Erreur",
+			"Unknown Extension": "Extension inconnue :"
 		},
 		"vs/workbench/contrib/extensions/electron-browser/extensionsWidgets": {
 			"ratedBySingleUser": "Évaluée par 1 utilisateur",
@@ -3350,10 +3457,6 @@
 			"viewExtensionDetailsAria": "{0}. Appuyez sur Entrée pour voir les détails de l'extension.",
 			"viewRecommendedExtensionDetailsAria": "{0}. {1} Appuyez sur Entrée pour obtenir les détails de l'extension.",
 			"remote extension title": "Extension dans {0}"
-		},
-		"vs/workbench/contrib/extensions/browser/extensionsViewer": {
-			"error": "Erreur",
-			"Unknown Extension": "Extension inconnue :"
 		},
 		"vs/workbench/contrib/externalTerminal/electron-browser/externalTerminal.contribution": {
 			"terminalConfigurationTitle": "Terminal externe",
@@ -3400,6 +3503,9 @@
 			"character left": "caractère restant",
 			"characters left": "caractères restants"
 		},
+		"vs/workbench/contrib/files/browser/explorerViewlet": {
+			"folders": "Dossiers"
+		},
 		"vs/workbench/contrib/files/browser/fileActions.contribution": {
 			"filesCategory": "fichier",
 			"copyPath": "Copier le chemin",
@@ -3440,9 +3546,6 @@
 			"miRevert": "Réta&&blir le fichier",
 			"miCloseEditor": "Fermer l'édit&&eur",
 			"miGotoFile": "Atteindre le &&fichier..."
-		},
-		"vs/workbench/contrib/files/browser/explorerViewlet": {
-			"folders": "Dossiers"
 		},
 		"vs/workbench/contrib/files/browser/files.contribution": {
 			"showExplorerViewlet": "Afficher l'Explorateur",
@@ -3497,6 +3600,23 @@
 			"explorer.decorations.colors": "Contrôle si les décorations de fichier devraient utiliser des couleurs.",
 			"explorer.decorations.badges": "Contrôle si les décorations de fichier devraient utiliser des badges.",
 			"miViewExplorer": "&&Explorateur"
+		},
+		"vs/workbench/contrib/files/browser/views/explorerView": {
+			"explorerSection": "Section de l'Explorateur de fichiers",
+			"treeAriaLabel": "Explorateur de fichiers"
+		},
+		"vs/workbench/contrib/files/browser/views/emptyView": {
+			"noWorkspace": "Aucun dossier ouvert",
+			"explorerSection": "Section de l'Explorateur de fichiers",
+			"noWorkspaceHelp": "Vous n'avez pas encore ajouté un dossier à l'espace de travail.",
+			"addFolder": "Ajouter un dossier",
+			"noFolderHelp": "Vous n'avez pas encore ouvert de dossier.",
+			"openFolder": "Ouvrir le dossier"
+		},
+		"vs/workbench/contrib/files/browser/views/openEditorsView": {
+			"openEditors": "Éditeurs ouverts",
+			"openEditosrSection": "Section des éditeurs ouverts",
+			"dirtyCounter": "{0} non enregistré(s)"
 		},
 		"vs/workbench/contrib/files/browser/saveErrorHandler": {
 			"userGuide": "Utilisez les actions de la barre d'outils de l'éditeur pour annuler vos modifications, ou pour remplacer le contenu sur le disque par vos modifications.",
@@ -3593,23 +3713,6 @@
 			"openFileToReveal": "Open a file first to reveal",
 			"openFileToCopy": "Ouvrir d'abord un fichier pour copier son chemin"
 		},
-		"vs/workbench/contrib/files/browser/views/emptyView": {
-			"noWorkspace": "Aucun dossier ouvert",
-			"explorerSection": "Section de l'Explorateur de fichiers",
-			"noWorkspaceHelp": "Vous n'avez pas encore ajouté un dossier à l'espace de travail.",
-			"addFolder": "Ajouter un dossier",
-			"noFolderHelp": "Vous n'avez pas encore ouvert de dossier.",
-			"openFolder": "Ouvrir le dossier"
-		},
-		"vs/workbench/contrib/files/browser/views/explorerView": {
-			"explorerSection": "Section de l'Explorateur de fichiers",
-			"treeAriaLabel": "Explorateur de fichiers"
-		},
-		"vs/workbench/contrib/files/browser/views/openEditorsView": {
-			"openEditors": "Éditeurs ouverts",
-			"openEditosrSection": "Section des éditeurs ouverts",
-			"dirtyCounter": "{0} non enregistré(s)"
-		},
 		"vs/workbench/contrib/files/common/editors/fileEditorInput": {
 			"orphanedFile": "{0} (deleted from disk)",
 			"readonlyFile": "{0} (en lecture seule)"
@@ -3623,12 +3726,12 @@
 			"fileEditorWithInputAriaLabel": "{0}. Éditeur de fichier texte.",
 			"fileEditorAriaLabel": "Éditeur de fichier texte."
 		},
-		"vs/workbench/contrib/files/browser/editors/binaryFileEditor": {
-			"binaryFileEditor": "Visionneuse de fichier binaire"
-		},
 		"vs/workbench/contrib/files/common/dirtyFilesTracker": {
 			"dirtyFile": "1 fichier non enregistré",
 			"dirtyFiles": "{0} fichiers non enregistrés"
+		},
+		"vs/workbench/contrib/files/browser/editors/binaryFileEditor": {
+			"binaryFileEditor": "Visionneuse de fichier binaire"
 		},
 		"vs/workbench/contrib/files/browser/views/explorerDecorationsProvider": {
 			"label": "Explorateur",
@@ -3652,9 +3755,22 @@
 			"moveButtonLabel": "&&Déplacer",
 			"confirmOverwriteMessage": "{0}' existe déjà dans le dossier de destination. Voulez-vous le remplacer ?"
 		},
-		"vs/workbench/contrib/format/browser/format.contribution": {
-			"no.documentprovider": "Il n’y a aucun formateur de document installé pour les fichiers '{0}'.",
-			"no.selectionprovider": "Il n’y a aucun formateur de sélection installé pour les fichiers '{0}'.",
+		"vs/workbench/contrib/format/browser/formatActionsMultiple": {
+			"miss": "L'extension '{0}' ne peut pas mettre en forme '{1}'",
+			"gone": "L'extension '{0}' est configurée comme formateur, mais n'est pas disponible",
+			"config.needed": "Il y a plusieurs formateurs pour les fichiers de {0}. Sélectionnez un formateur par défaut pour continuer.",
+			"do.config": "Configurer...",
+			"select": "Sélectionner un formateur par défaut pour les fichiers de {0}",
+			"formatter.default": "Définit un formateur par défaut qui est prioritaire sur tous les autres paramètres de formateur. Doit être l'identificateur d'une extension contribuant à un formateur.",
+			"def": "(Par défaut)",
+			"config": "Configurer le formateur par défaut...",
+			"format.placeHolder": "Sélectionner un formateur",
+			"formatDocument.label.multiple": "Mettre en forme un document avec...",
+			"formatSelection.label.multiple": "Mettre en forme la sélection avec..."
+		},
+		"vs/workbench/contrib/format/browser/formatActionsNone": {
+			"formatDocument.label.multiple": "Mettre le document en forme",
+			"no.rovider": "Il n’y a aucun formateur installé pour les fichiers '{0}'.",
 			"install.formatter": "Installer le formateur..."
 		},
 		"vs/workbench/contrib/issue/electron-browser/issue.contribution": {
@@ -3684,10 +3800,10 @@
 		},
 		"vs/workbench/contrib/localizations/browser/localizationsActions": {
 			"configureLocale": "Configurer la langue d'affichage",
-			"installAdditionalLanguages": "Install additional languages...",
-			"chooseDisplayLanguage": "Select Display Language",
-			"relaunchDisplayLanguageMessage": "A restart is required for the change in display language to take effect.",
-			"relaunchDisplayLanguageDetail": "Press the restart button to restart {0} and change the display language.",
+			"installAdditionalLanguages": "Installer des langues supplémentaires...",
+			"chooseDisplayLanguage": "Sélectionner la langue d'affichage",
+			"relaunchDisplayLanguageMessage": "Vous devez redémarrer pour appliquer le changement de la langue d'affichage.",
+			"relaunchDisplayLanguageDetail": "Appuyez sur le bouton Redémarrer pour redémarrer {0} et changer la langue d'affichage.",
 			"restart": "&&Redémarrer"
 		},
 		"vs/workbench/contrib/localizations/browser/minimalTranslations": {
@@ -3726,15 +3842,15 @@
 			"show singleline": "Afficher le message sur une seule ligne",
 			"miMarker": "&&Problèmes"
 		},
+		"vs/workbench/contrib/markers/browser/markersPanelActions": {
+			"showing filtered problems": "Afficher {0} sur {1}"
+		},
 		"vs/workbench/contrib/markers/browser/markersPanel": {
 			"collapseAll": "Réduire tout",
 			"No problems filtered": "Affichage de {0} problèmes",
 			"problems filtered": "Affichage de {0} problèmes sur {1}",
 			"disableFilesExclude": "Désactivez le filtre d'exclusion de fichiers.",
 			"clearFilter": "Effacez le filtre."
-		},
-		"vs/workbench/contrib/markers/browser/markersPanelActions": {
-			"showing filtered problems": "Afficher {0} sur {1}"
 		},
 		"vs/workbench/contrib/markers/browser/messages": {
 			"viewCategory": "Afficher",
@@ -3861,6 +3977,7 @@
 			"settingsEditor2": "Éditeur de paramètres 2",
 			"keybindingsEditor": "Éditeur de combinaisons de touches",
 			"preferences": "Préférences",
+			"openRemoteSettings": "Ouvrir les paramètres utilisateur ({0})",
 			"preferencesCategory": "Préférences",
 			"showDefaultKeybindings": "Afficher les combinaisons de touches par défaut",
 			"showUserKeybindings": "Afficher les combinaisons de touches de l'utilisateur",
@@ -3877,7 +3994,7 @@
 			"defineKeybinding.kbLayoutLocalMessage": "**{0}** pour votre disposition actuelle du clavier."
 		},
 		"vs/workbench/contrib/preferences/browser/preferencesActions": {
-			"openRawDefaultSettings": "Open Default Settings (JSON)",
+			"openRawDefaultSettings": "Ouvrir les paramètres par défaut (JSON)",
 			"openSettings2": "Afficher les paramètres (IU)",
 			"openSettingsJson": "Afficher les paramètres (en JSON)",
 			"openGlobalSettings": "Ouvrir les paramètres utilisateur",
@@ -4010,10 +4127,6 @@
 			"update": "Mettre à jour",
 			"telemetry": "Télémétrie"
 		},
-		"vs/workbench/contrib/preferences/browser/settingsTreeModels": {
-			"workspace": "Espace de travail",
-			"user": "Utilisateur"
-		},
 		"vs/workbench/contrib/preferences/browser/settingsTree": {
 			"extensions": "Extensions",
 			"modified": "Modifié le",
@@ -4029,6 +4142,13 @@
 			"treeAriaLabel": "Paramètres",
 			"copySettingIdLabel": "Copier l'ID du paramètre",
 			"copySettingAsJSONLabel": "Copier le Paramètre en JSON"
+		},
+		"vs/workbench/contrib/preferences/browser/tocTree": {
+			"groupRowAriaLabel": "{0}, groupe"
+		},
+		"vs/workbench/contrib/preferences/browser/settingsTreeModels": {
+			"workspace": "Espace de travail",
+			"user": "Utilisateur"
 		},
 		"vs/workbench/contrib/preferences/browser/settingsWidgets": {
 			"headerForeground": "(Pour la préversion de l'éditeur de paramètres) Couleur de premier plan pour un en-tête de section ou un titre actif.",
@@ -4055,9 +4175,6 @@
 			"excludeSiblingInputPlaceholder": "Quand le modèle est présent ...",
 			"okButton": "OK",
 			"cancelButton": "Annuler"
-		},
-		"vs/workbench/contrib/preferences/browser/tocTree": {
-			"groupRowAriaLabel": "{0}, groupe"
 		},
 		"vs/workbench/contrib/quickopen/browser/quickopen.contribution": {
 			"view": "Afficher",
@@ -4129,6 +4246,11 @@
 			"gotoLineLabel": "Accédez à la ligne {0}.",
 			"cannotRunGotoLine": "Ouvrez un fichier texte pour accéder à une ligne."
 		},
+		"vs/workbench/contrib/quickopen/browser/helpHandler": {
+			"entryAriaLabel": "{0}, aide sur le sélecteur",
+			"globalCommands": "commandes globales",
+			"editorCommands": "commandes de l'éditeur"
+		},
 		"vs/workbench/contrib/quickopen/browser/viewPickerHandler": {
 			"entryAriaLabel": "{0}, sélecteur de vues",
 			"views": "Barre latérale",
@@ -4139,11 +4261,6 @@
 			"logChannel": "Journal ({0})",
 			"openView": "Ouvrir l'affichage",
 			"quickOpenView": "Mode Quick Open"
-		},
-		"vs/workbench/contrib/quickopen/browser/helpHandler": {
-			"entryAriaLabel": "{0}, aide sur le sélecteur",
-			"globalCommands": "commandes globales",
-			"editorCommands": "commandes de l'éditeur"
 		},
 		"vs/workbench/contrib/relauncher/electron-browser/relauncher.contribution": {
 			"relaunchSettingMessage": "Un paramètre a changé et nécessite un redémarrage pour être appliqué.",
@@ -4157,7 +4274,7 @@
 			"view": "Afficher",
 			"scmConfigurationTitle": "SCM",
 			"alwaysShowProviders": "Contrôle si vous souhaitez toujours afficher la section fournisseur de contrôle de code source.",
-			"providersVisible": "Controls how many providers are visible in the Source Control Provider section. Set to `0` to be able to manually resize the view.",
+			"providersVisible": "Contrôle le nombre de fournisseurs visibles dans la section Fournisseur de contrôle de code source. Définissez la valeur '0' pour redimensionner manuellement la vue.",
 			"diffDecorations": "Contrôle les décorations diff dans l'éditeur",
 			"diffGutterWidth": "Contrôle la largeur (px) des ornements des différences dans la marge (ajoutées et modifiées).",
 			"alwaysShowActions": "Contrôle si les actions inline sont toujours visibles dans la vue Contrôle de code source.",
@@ -4169,6 +4286,9 @@
 			"no open repo": "Aucun fournisseur de contrôle de code source inscrit.",
 			"source control": "Contrôle de code source",
 			"viewletTitle": "{0}: {1}"
+		},
+		"vs/workbench/contrib/scm/browser/scmActivity": {
+			"scmPendingChangesBadge": "{0} changements en attente"
 		},
 		"vs/workbench/contrib/scm/browser/dirtydiffDecorator": {
 			"changes": "{0} sur {1} modifications",
@@ -4185,9 +4305,6 @@
 			"overviewRulerModifiedForeground": "Couleur du marqueur de la règle d'aperçu pour le contenu modifié.",
 			"overviewRulerAddedForeground": "Couleur du marqueur de la règle d'aperçu pour le contenu ajouté.",
 			"overviewRulerDeletedForeground": "Couleur du marqueur de la règle d'aperçu pour le contenu supprimé."
-		},
-		"vs/workbench/contrib/scm/browser/scmActivity": {
-			"scmPendingChangesBadge": "{0} changements en attente"
 		},
 		"vs/workbench/contrib/search/browser/search.contribution": {
 			"search": "Recherche",
@@ -4307,6 +4424,9 @@
 			"file.replaceAll.label": "Tout remplacer",
 			"match.replace.label": "Remplacer"
 		},
+		"vs/workbench/contrib/search/browser/searchPanel": {
+			"search": "Recherche"
+		},
 		"vs/workbench/contrib/search/browser/searchWidget": {
 			"search.action.replaceAll.disabled.label": "Tout remplacer (soumettre la recherche pour activer)",
 			"search.action.replaceAll.enabled.label": "Tout remplacer",
@@ -4316,9 +4436,6 @@
 			"label.Replace": "Remplacer : tapez le terme de remplacement, puis appuyez sur Entrée pour avoir un aperçu, ou sur Échap pour l'annuler",
 			"search.replace.placeHolder": "Remplacer",
 			"regexp.backreferenceValidationFailure": "Les références arrières (Backreferences) ne sont pas prises en charge"
-		},
-		"vs/workbench/contrib/search/browser/searchPanel": {
-			"search": "Recherche"
 		},
 		"vs/workbench/contrib/search/browser/openFileHandler": {
 			"entryAriaLabel": "{0}, sélecteur de fichiers",
@@ -4436,7 +4553,7 @@
 			"TaskService.noBuildTask2": "Aucune tâche de génération définie. Marquez une tâche comme groupe 'build' dans le fichier tasks.json.",
 			"TaskService.noTestTask1": "Aucune tâche de test définie. Marquez une tâche avec 'isTestCommand' dans le fichier tasks.json.",
 			"TaskService.noTestTask2": "Aucune tâche de test définie. Marquez une tâche comme groupe 'test' dans le fichier tasks.json.",
-			"TaskServer.noTask": "Task to execute is undefined",
+			"TaskServer.noTask": "La tâche a exécuter n’est pas définie",
 			"TaskService.associate": "Associer",
 			"TaskService.attachProblemMatcher.continueWithout": "Continuer sans analyser la sortie de la tâche",
 			"TaskService.attachProblemMatcher.never": "Ne jamais analyser la sortie de tâche",
@@ -4590,18 +4707,10 @@
 			"externalCommand": "Exemple d'exécution d'une commande externe arbitraire",
 			"Maven": "Exécute les commandes Maven courantes"
 		},
-		"vs/workbench/contrib/tasks/node/tasks": {
+		"vs/workbench/contrib/tasks/common/tasks": {
 			"TaskDefinition.missingRequiredProperty": "Erreur : L'identificateur de tâche '{0}' est manquant dans la propriété obligatoire '{1}'. L'identificateur de tâche est ignoré."
 		},
-		"vs/workbench/contrib/tasks/node/processTaskSystem": {
-			"version1": "Le système de tâches est configuré pour la version 0.1.0 (voir le fichier tasks.json), qui peut uniquement exécuter des tâches personnalisées. Mettre à niveau vers la version 2.0.0 pour exécuter la tâche : {0}",
-			"TaskRunnerSystem.unknownError": "Une erreur inconnue s'est produite durant l'exécution d'une tâche. Pour plus d'informations, consultez le journal de sortie des tâches.",
-			"TaskRunnerSystem.watchingBuildTaskFinished": "\nFin du suivi des tâches de génération.",
-			"TaskRunnerSystem.childProcessError": "Failed to launch external program {0} {1}.",
-			"TaskRunnerSystem.cancelRequested": "\nThe task '{0}' was terminated per user request.",
-			"unkownProblemMatcher": "Impossible de résoudre le détecteur de problèmes {0}. Le détecteur est ignoré"
-		},
-		"vs/workbench/contrib/tasks/node/taskConfiguration": {
+		"vs/workbench/contrib/tasks/common/taskConfiguration": {
 			"ConfigurationParser.invalidCWD": "Warning: options.cwd must be of type string. Ignoring value {0}\n",
 			"ConfigurationParser.inValidArg": "Erreur : l'argument de commande doit être une chaîne ou une chaîne entre apostrophes. La valeur fournie est : \n{0}",
 			"ConfigurationParser.noShell": "Avertissement : La configuration de l'interpréteur de commandes n'est prise en charge que durant l'exécution des tâches dans le terminal.",
@@ -4618,6 +4727,14 @@
 			"taskConfiguration.noCommand": "Erreur : La tâche '{0}' ne définit aucune commande. La tâche va être ignorée. Sa définition est :\n{1}",
 			"TaskParse.noOsSpecificGlobalTasks": "Task Version 2.0.0 ne supporte pas les tâches spécifiques globales du système d'exploitation. Convertissez-les en une tâche en une commande spécifique du système d'exploitation. Les tâches concernées sont : {0}"
 		},
+		"vs/workbench/contrib/tasks/node/processTaskSystem": {
+			"version1": "Le système de tâches est configuré pour la version 0.1.0 (voir le fichier tasks.json), qui peut uniquement exécuter des tâches personnalisées. Mettre à niveau vers la version 2.0.0 pour exécuter la tâche : {0}",
+			"TaskRunnerSystem.unknownError": "Une erreur inconnue s'est produite durant l'exécution d'une tâche. Pour plus d'informations, consultez le journal de sortie des tâches.",
+			"TaskRunnerSystem.watchingBuildTaskFinished": "\nFin du suivi des tâches de génération.",
+			"TaskRunnerSystem.childProcessError": "Failed to launch external program {0} {1}.",
+			"TaskRunnerSystem.cancelRequested": "\nThe task '{0}' was terminated per user request.",
+			"unkownProblemMatcher": "Impossible de résoudre le détecteur de problèmes {0}. Le détecteur est ignoré"
+		},
 		"vs/workbench/contrib/tasks/electron-browser/terminalTaskSystem": {
 			"TerminalTaskSystem.unknownError": "Une erreur inconnue s'est produite durant l'exécution d'une tâche. Pour plus d'informations, consultez le journal de sortie des tâches.",
 			"dependencyFailed": "Impossible de résoudre la tâche dépendante '{0}' dans le dossier de l’espace de travail '{1}'",
@@ -4626,16 +4743,6 @@
 			"reuseTerminal": "Le terminal sera réutilisé par les tâches, appuyez sur une touche pour le fermer.",
 			"TerminalTaskSystem": "Impossible d'exécuter une commande d'interpréteur de commandes sur un lecteur UNC à l'aide de cmd.exe.",
 			"unkownProblemMatcher": "Impossible de résoudre le détecteur de problèmes {0}. Le détecteur est ignoré"
-		},
-		"vs/workbench/contrib/tasks/node/processRunnerDetector": {
-			"TaskSystemDetector.noGulpTasks": "L'exécution de gulp --tasks-simple n'a listé aucune tâche. Avez-vous exécuté npm install ?",
-			"TaskSystemDetector.noJakeTasks": "L'exécution de jake --tasks n'a listé aucune tâche. Avez-vous exécuté npm install ?",
-			"TaskSystemDetector.noGulpProgram": "Gulp n'est pas installé sur votre système. Exécutez npm install -g gulp pour l'installer.",
-			"TaskSystemDetector.noJakeProgram": "Jake n'est pas installé sur votre système. Exécutez npm install -g jake pour l'installer.",
-			"TaskSystemDetector.noGruntProgram": "Grunt n'est pas installé sur votre système. Exécutez npm install -g grunt pour l'installer.",
-			"TaskSystemDetector.noProgram": "Le programme {0} est introuvable. Message : {1}",
-			"TaskSystemDetector.buildTaskDetected": "La tâche de génération nommée '{0}' a été détectée.",
-			"TaskSystemDetector.testTaskDetected": "La tâche de test nommée '{0}' a été détectée."
 		},
 		"vs/workbench/contrib/tasks/browser/quickOpen": {
 			"entryAriaLabel": "{0}, tasks",
@@ -4650,6 +4757,16 @@
 			"TaskTypeConfiguration.noType": "La propriété 'taskType' obligatoire est manquante dans la configuration du type de tâche",
 			"TaskDefinitionExtPoint": "Ajoute des types de tâche"
 		},
+		"vs/workbench/contrib/tasks/node/processRunnerDetector": {
+			"TaskSystemDetector.noGulpTasks": "L'exécution de gulp --tasks-simple n'a listé aucune tâche. Avez-vous exécuté npm install ?",
+			"TaskSystemDetector.noJakeTasks": "L'exécution de jake --tasks n'a listé aucune tâche. Avez-vous exécuté npm install ?",
+			"TaskSystemDetector.noGulpProgram": "Gulp n'est pas installé sur votre système. Exécutez npm install -g gulp pour l'installer.",
+			"TaskSystemDetector.noJakeProgram": "Jake n'est pas installé sur votre système. Exécutez npm install -g jake pour l'installer.",
+			"TaskSystemDetector.noGruntProgram": "Grunt n'est pas installé sur votre système. Exécutez npm install -g grunt pour l'installer.",
+			"TaskSystemDetector.noProgram": "Le programme {0} est introuvable. Message : {1}",
+			"TaskSystemDetector.buildTaskDetected": "La tâche de génération nommée '{0}' a été détectée.",
+			"TaskSystemDetector.testTaskDetected": "La tâche de test nommée '{0}' a été détectée."
+		},
 		"vs/workbench/contrib/tasks/electron-browser/runAutomaticTasks": {
 			"tasks.run.allowAutomatic": "Ce dossier a des tâches ({0}) définies dans 'tasks.json' qui s'exécutent automatiquement à l'ouverture du dossier. Autorisez-vous l'exécution des tâches automatiques à l'ouverture de ce dossier ?",
 			"allow": "Autoriser et exécuter",
@@ -4658,7 +4775,7 @@
 			"workbench.action.tasks.allowAutomaticRunning": "Autoriser les tâches automatiques dans le dossier",
 			"workbench.action.tasks.disallowAutomaticRunning": "Interdire les tâches automatiques dans le dossier"
 		},
-		"vs/workbench/contrib/tasks/electron-browser/jsonSchema_v1": {
+		"vs/workbench/contrib/tasks/common/jsonSchema_v1": {
 			"JsonSchema.version.deprecated": "Task version 0.1.0 est dépréciée. Veuillez utiliser 2.0.0",
 			"JsonSchema.version": "Numéro de version de la configuration",
 			"JsonSchema.": "Le runner est dégradé. Utiliser la propriété runner officielle",
@@ -4668,7 +4785,7 @@
 			"JsonSchema.linux": "Configuration de commande spécifique à Linux",
 			"JsonSchema.shell": "Spécifie si la commande est une commande d'interpréteur de commandes ou un programme externe. La valeur par défaut est false, en cas d'omission."
 		},
-		"vs/workbench/contrib/tasks/electron-browser/jsonSchema_v2": {
+		"vs/workbench/contrib/tasks/common/jsonSchema_v2": {
 			"JsonSchema.shell": "Spécifie si la commande est une commande d'interpréteur de commandes ou un programme externe. La valeur par défaut est false, en cas d'omission.",
 			"JsonSchema.tasks.isShellCommand.deprecated": "La propriété isShellCommand est dépréciée. Utilisez à la place la propriété de type de la tâche et la propriété d'interpréteur de commandes dans les options. Consultez également les notes de publication 1.14.",
 			"JsonSchema.tasks.dependsOn.identifier": "Identificateur de tâche.",
@@ -4690,8 +4807,8 @@
 			"JsonSchema.tasks.group.isDefault": "Définit si cette tâche est la tâche par défaut du groupe.",
 			"JsonSchema.tasks.group.defaultBuild": "Marque la tâche comme tâche de génération par défaut.",
 			"JsonSchema.tasks.group.defaultTest": "Marque la tâche comme tâche de test par défaut.",
-			"JsonSchema.tasks.group.build": "Marks the task as a build task accessible through the 'Run Build Task' command.",
-			"JsonSchema.tasks.group.test": "Marks the task as a test task accessible through the 'Run Test Task' command.",
+			"JsonSchema.tasks.group.build": "Marque la tâche comme une tâche de build accessible avec la commande 'Exécuter la tâche de build'.",
+			"JsonSchema.tasks.group.test": "Marque la tâche comme tâche de test accessible avec la commande 'Exécuter la tâche de test'.",
 			"JsonSchema.tasks.group.none": "N'assigne la tâche à aucun groupe",
 			"JsonSchema.tasks.group": "Définit le groupe d'exécution auquel la tâche appartient. Prend en charge \"build\" pour l'ajouter au groupe de génération et \"test\" pour l'ajouter au groupe de test.",
 			"JsonSchema.tasks.type": "Définit si la tâche est exécutée comme un processus ou comme une commande à l’intérieur d’un shell.",
@@ -4730,7 +4847,7 @@
 			"JsonSchema.mac": "Configuration de commande spécifique à Mac",
 			"JsonSchema.linux": "Configuration de commande spécifique à Linux"
 		},
-		"vs/workbench/contrib/tasks/electron-browser/jsonSchemaCommon": {
+		"vs/workbench/contrib/tasks/common/jsonSchemaCommon": {
 			"JsonSchema.options": "Options de commande supplémentaires",
 			"JsonSchema.options.cwd": "Répertoire de travail actif du programme ou script exécuté. En cas d'omission, la racine de l'espace de travail actif de Code est utilisée.",
 			"JsonSchema.options.env": "Environnement du programme ou de l'interpréteur de commandes exécuté. En cas d'omission, l'environnement du processus parent est utilisé.",
@@ -4763,6 +4880,12 @@
 			"JsonSchema.taskSelector": "Préfixe indiquant qu'un argument est une tâche.",
 			"JsonSchema.matchers": "Détecteur(s) de problèmes de correspondance à utiliser. Il peut s'agir d'une chaîne ou d'une définition de détecteur de problèmes de correspondance, ou encore d'un tableau de chaînes et de détecteurs de problèmes de correspondance.",
 			"JsonSchema.tasks": "Configurations de la tâche. Il s'agit généralement d'enrichissements d'une tâche déjà définie dans l'exécuteur de tâches externe."
+		},
+		"vs/workbench/contrib/terminal/electron-browser/terminal.contribution": {
+			"terminalIntegratedConfigurationTitle": "Terminal intégré",
+			"terminal.integrated.shell.linux": "Chemin de l’interpréteur de commandes que le terminal utilise sous Linux. [En savoir plus sur la configuration de l’interpréteur de commandes] (https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
+			"terminal.integrated.shell.osx": "Chemin de l’interpréteur de commandes que le terminal utilise sur Mac OS. [En savoir plus sur la configuration de l’interpréteur de commandes] (https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
+			"terminal.integrated.shell.windows": "Chemin de l’interpréteur de commandes que le terminal utilise sous Windows. [En savoir plus sur la configuration de l’interpréteur de commandes] (https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration)."
 		},
 		"vs/workbench/contrib/terminal/browser/terminal.contribution": {
 			"quickOpen.terminal": "Afficher tous les terminaux ouverts",
@@ -4810,11 +4933,6 @@
 			"terminalCategory": "Terminal",
 			"viewCategory": "Afficher"
 		},
-		"vs/workbench/contrib/terminal/electron-browser/terminal.contribution": {
-			"terminal.integrated.shell.linux": "Chemin de l’interpréteur de commandes que le terminal utilise sous Linux. [En savoir plus sur la configuration de l’interpréteur de commandes] (https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
-			"terminal.integrated.shell.osx": "Chemin de l’interpréteur de commandes que le terminal utilise sur Mac OS. [En savoir plus sur la configuration de l’interpréteur de commandes] (https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).",
-			"terminal.integrated.shell.windows": "Chemin de l’interpréteur de commandes que le terminal utilise sous Windows. [En savoir plus sur la configuration de l’interpréteur de commandes] (https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration)."
-		},
 		"vs/workbench/contrib/terminal/browser/terminalQuickOpen": {
 			"termEntryAriaLabel": "{0}, sélecteur de terminaux",
 			"termCreateEntryAriaLabel": "{0}, créer un terminal",
@@ -4825,6 +4943,14 @@
 		"vs/workbench/contrib/terminal/browser/terminalPanel": {
 			"terminal.useMonospace": "Utilisez 'monospace'",
 			"terminal.monospaceOnly": "Le terminal prend uniquement en charge les polices à espacement fixe."
+		},
+		"vs/workbench/contrib/terminal/electron-browser/terminalInstanceService": {
+			"terminal.integrated.a11yBlankLine": "Ligne vide",
+			"terminal.integrated.a11yPromptLabel": "Entrée du terminal",
+			"terminal.integrated.a11yTooMuchOutput": "Trop de sorties à annoncer, naviguer dans les lignes manuellement pour lire"
+		},
+		"vs/workbench/contrib/terminal/electron-browser/terminalService": {
+			"terminal.integrated.chooseWindowsShell": "Sélectionnez votre interpréteur de commandes de terminal favori. Vous pouvez le changer plus tard dans vos paramètres"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalActions": {
 			"workbench.action.terminal.newWorkspacePlaceholder": "Sélectionner le répertoire de travail actuel pour le nouveau terminal",
@@ -4919,19 +5045,6 @@
 			"terminal.integrated.launchFailed": "Échec du lancement de la commande de traitement du terminal '{0}{1}' (code de sortie : {2})",
 			"terminal.integrated.launchFailedExtHost": "Impossible de démarrer le processus du terminal (code de sortie : {0})"
 		},
-		"vs/workbench/contrib/terminal/electron-browser/terminalInstanceService": {
-			"terminal.integrated.a11yBlankLine": "Ligne vide",
-			"terminal.integrated.a11yPromptLabel": "Entrée du terminal",
-			"terminal.integrated.a11yTooMuchOutput": "Trop de sorties à annoncer, naviguer dans les lignes manuellement pour lire"
-		},
-		"vs/workbench/contrib/terminal/electron-browser/terminalService": {
-			"terminal.integrated.chooseWindowsShell": "Sélectionnez votre interpréteur de commandes de terminal favori. Vous pouvez le changer plus tard dans vos paramètres"
-		},
-		"vs/workbench/contrib/terminal/browser/terminalLinkHandler": {
-			"terminalLinkHandler.followLinkAlt": "Alt + clic pour suivre le lien",
-			"terminalLinkHandler.followLinkCmd": "Commande + clic pour suivre le lien",
-			"terminalLinkHandler.followLinkCtrl": "Ctrl + clic pour suivre le lien"
-		},
 		"vs/workbench/contrib/terminal/browser/terminalService": {
 			"terminal.integrated.chooseWindowsShellInfo": "Vous pouvez changer l'interpréteur de commandes par défaut du terminal en sélectionnant le bouton Personnaliser.",
 			"customize": "Personnaliser",
@@ -4942,13 +5055,18 @@
 			"allow": "Autoriser",
 			"disallow": "Interdire"
 		},
+		"vs/workbench/contrib/terminal/browser/terminalLinkHandler": {
+			"terminalLinkHandler.followLinkAlt": "Alt + clic pour suivre le lien",
+			"terminalLinkHandler.followLinkCmd": "Commande + clic pour suivre le lien",
+			"terminalLinkHandler.followLinkCtrl": "Ctrl + clic pour suivre le lien"
+		},
+		"vs/workbench/contrib/terminal/browser/terminalTab": {
+			"terminalFocus": "Terminal {0}"
+		},
 		"vs/workbench/contrib/terminal/common/terminalService": {
 			"terminalService.terminalCloseConfirmationSingular": "Il existe une session de terminal active. Voulez-vous la tuer ?",
 			"terminalService.terminalCloseConfirmationPlural": "Il existe {0} sessions de terminal actives. Voulez-vous les tuer ?",
 			"terminal.minWidth": "Pas assez d’espace pour diviser le terminal."
-		},
-		"vs/workbench/contrib/terminal/browser/terminalTab": {
-			"terminalFocus": "Terminal {0}"
 		},
 		"vs/workbench/contrib/themes/browser/themes.contribution": {
 			"selectTheme.label": "Thème de couleur",
@@ -5002,7 +5120,7 @@
 			"DownloadingUpdate": "Téléchargement de la mise à jour...",
 			"installUpdate...": "Installer la mise à jour...",
 			"installingUpdate": "Installation de la mise à jour...",
-			"restartToUpdate": "Restart to Update"
+			"restartToUpdate": "Redémarrer pour mettre à jour"
 		},
 		"vs/workbench/contrib/update/electron-browser/releaseNotesEditor": {
 			"releaseNotesInputName": "Notes de publication : {0}",
@@ -5034,6 +5152,11 @@
 			"openToolsLabel": "Ouvrir les outils de développement Webview",
 			"refreshWebviewLabel": "Recharger les Webviews"
 		},
+		"vs/workbench/contrib/welcome/walkThrough/browser/walkThrough.contribution": {
+			"walkThrough.editor.label": "Terrain de jeu interactif",
+			"help": "Aide",
+			"miInteractivePlayground": "Terrain de jeu i&&nteractif"
+		},
 		"vs/workbench/contrib/welcome/overlay/browser/welcomeOverlay": {
 			"welcomeOverlay.explorer": "Explorateur de fichiers",
 			"welcomeOverlay.search": "Rechercher dans les fichiers",
@@ -5048,11 +5171,6 @@
 			"hideWelcomeOverlay": "Masquer la vue d'ensemble de l'interface",
 			"help": "Aide"
 		},
-		"vs/workbench/contrib/welcome/walkThrough/browser/walkThrough.contribution": {
-			"walkThrough.editor.label": "Terrain de jeu interactif",
-			"help": "Aide",
-			"miInteractivePlayground": "Terrain de jeu i&&nteractif"
-		},
 		"vs/workbench/contrib/welcome/page/browser/welcomePage.contribution": {
 			"workbenchConfigurationTitle": "Banc d'essai",
 			"workbench.startupEditor.none": "Démarrage sans éditeur.",
@@ -5064,14 +5182,6 @@
 			"help": "Aide",
 			"miWelcome": "&&Bienvenue"
 		},
-		"vs/workbench/contrib/welcome/gettingStarted/electron-browser/telemetryOptOut": {
-			"telemetryOptOut.optOutNotice": "Aidez-nous à améliorer VS Code en permettant à Microsoft de recueillir des données d’utilisation. Lisez notre [déclaration sur la vie privée]({0}) et apprenez comment [se désengager]({1}).",
-			"telemetryOptOut.optInNotice": "Aidez-nous à améliorer VS Code en permettant à Microsoft de recueillir des données d’utilisation. Lisez notre [déclaration sur la vie privée]({0})  et apprenez comment [se désengager]({1}).",
-			"telemetryOptOut.readMore": "Lire la suite",
-			"telemetryOptOut.optOutOption": "Aidez-nous à améliorer Visual Studio Code en permettant à Microsoft de recueillir des données d’utilisation. Pour plus d'informations, lisez notre [déclaration de confidentialité]({0}). ",
-			"telemetryOptOut.OptIn": "Oui, heureux de vous aider",
-			"telemetryOptOut.OptOut": "Non, merci"
-		},
 		"vs/workbench/contrib/welcome/walkThrough/browser/walkThroughPart": {
 			"walkThrough.unboundCommand": "indépendant",
 			"walkThrough.gitNotFound": "Git semble ne pas être installé sur votre système.",
@@ -5080,6 +5190,14 @@
 		"vs/workbench/contrib/welcome/walkThrough/browser/editor/editorWalkThrough": {
 			"editorWalkThrough.title": "Terrain de jeu interactif",
 			"editorWalkThrough": "Terrain de jeu interactif"
+		},
+		"vs/workbench/contrib/welcome/gettingStarted/electron-browser/telemetryOptOut": {
+			"telemetryOptOut.optOutNotice": "Aidez-nous à améliorer VS Code en permettant à Microsoft de recueillir des données d’utilisation. Lisez notre [déclaration sur la vie privée]({0}) et apprenez comment [se désengager]({1}).",
+			"telemetryOptOut.optInNotice": "Aidez-nous à améliorer VS Code en permettant à Microsoft de recueillir des données d’utilisation. Lisez notre [déclaration sur la vie privée]({0})  et apprenez comment [se désengager]({1}).",
+			"telemetryOptOut.readMore": "Lire la suite",
+			"telemetryOptOut.optOutOption": "Aidez-nous à améliorer Visual Studio Code en permettant à Microsoft de recueillir des données d’utilisation. Pour plus d'informations, lisez notre [déclaration de confidentialité]({0}). ",
+			"telemetryOptOut.OptIn": "Oui, heureux de vous aider",
+			"telemetryOptOut.OptOut": "Non, merci"
 		},
 		"vs/workbench/contrib/welcome/page/browser/welcomePage": {
 			"welcomePage": "Bienvenue",
@@ -5157,7 +5275,7 @@
 			"summary.n0": "{0} modifications de texte effectuées dans un fichier",
 			"conflict": "Ces fichiers ont changé pendant ce temps : {0}"
 		},
-		"vs/workbench/services/configuration/node/jsonEditingService": {
+		"vs/workbench/services/configuration/common/jsonEditingService": {
 			"errorInvalidFile": "Impossible d’écrire dans le fichier. Veuillez ouvrir le fichier pour corriger les erreurs/avertissements dans le fichier et réessayer.",
 			"errorFileDirty": "Impossible d’écrire dans le fichier parce que le fichier a été modifié. Veuillez enregistrer le fichier et réessayer."
 		},
@@ -5165,7 +5283,7 @@
 			"unsupportedApplicationSetting": "Ce paramètre ne peut être appliqué que dans les paramètres utilisateur",
 			"unsupportedWindowSetting": "Ce paramètre ne peut pas être appliqué maintenant. Il est appliqué quand vous ouvrez ce dossier directement."
 		},
-		"vs/workbench/services/configuration/node/configurationEditingService": {
+		"vs/workbench/services/configuration/common/configurationEditingService": {
 			"openTasksConfiguration": "Ouvrir la configuration des tâches",
 			"openLaunchConfiguration": "Ouvrir la configuration du lancement",
 			"open": "Ouvrir les paramètres",
@@ -5200,14 +5318,14 @@
 			"inputVariable.undefinedVariable": "Variable d'entrée '{0}' non définie. Supprimez ou définissez '{0}' pour continuer."
 		},
 		"vs/workbench/services/configurationResolver/common/variableResolver": {
+			"canNotResolveFile": "'{0}' ne peut pas être résolu. Veuillez ouvrir un éditeur.",
+			"canNotFindFolder": "'{0}' ne peut pas être résolu. Aucun dossier '{1}'.",
+			"canNotResolveWorkspaceFolderMultiRoot": "'{0}' ne peut pas être résolu dans un espace de travail de dossiers multiples. Gérer la portée cette variable en utilisant ':' et un nom de dossier d’espace de travail.",
+			"canNotResolveWorkspaceFolder": "'{0}' ne peut pas être résolu. Veuillez ouvrir un dossier.",
 			"missingEnvVarName": "'{0}' ne peut pas être résolu car aucun nom de variable d’environnement n’est donné.",
 			"configNotFound": "'{0}' ne peut pas être résolu car le paramètre '{1}' est introuvable.",
 			"configNoString": "'{0}' ne peut pas être résolu car '{1}' est une valeur structurée.",
 			"missingConfigName": "'{0}' ne peut pas être résolu car aucun nom de paramètre n'est donné.",
-			"canNotFindFolder": "'{0}' ne peut pas être résolu. Aucun dossier '{1}'.",
-			"canNotResolveWorkspaceFolderMultiRoot": "'{0}' ne peut pas être résolu dans un espace de travail de dossiers multiples. Gérer la portée cette variable en utilisant ':' et un nom de dossier d’espace de travail.",
-			"canNotResolveWorkspaceFolder": "'{0}' ne peut pas être résolu. Veuillez ouvrir un dossier.",
-			"canNotResolveFile": "'{0}' ne peut pas être résolu. Veuillez ouvrir un éditeur.",
 			"canNotResolveLineNumber": "'{0}' ne peut pas être résolu. Assurez-vous d’avoir une ligne sélectionnée dans l’éditeur actif.",
 			"canNotResolveSelectedText": "'{0}' ne peut pas être résolu. Assurez-vous que vous avez du texte sélectionné dans l’éditeur actif.",
 			"noValueForCommand": "Impossible de résoudre '{0}', car la commande n'a pas de valeur."
@@ -5231,27 +5349,29 @@
 		"vs/workbench/services/decorations/browser/decorationsService": {
 			"bubbleTitle": "Contient des éléments mis en évidence"
 		},
-		"vs/workbench/services/dialogs/electron-browser/dialogService": {
-			"yesButton": "&&Oui",
-			"cancelButton": "Annuler",
+		"vs/workbench/services/dialogs/browser/fileDialogService": {
 			"openFileOrFolder.title": "Ouvrir un fichier ou un dossier",
 			"openFile.title": "Ouvrir un fichier",
 			"openFolder.title": "Ouvrir le dossier",
 			"openWorkspace.title": "Ouvrir un espace de travail",
 			"filterName.workspace": "Espace de travail"
 		},
-		"vs/workbench/services/dialogs/electron-browser/remoteFileDialog": {
-			"remoteFileDialog.localFileFallback": "(Open Local File)",
-			"remoteFileDialog.localFolderFallback": "(Open Local Folder)",
-			"remoteFileDialog.localFileFolderFallback": "(Open Local File or Folder)",
-			"remoteFileDialog.localSaveFallback": "(Save Local File)",
+		"vs/workbench/services/dialogs/electron-browser/dialogService": {
+			"yesButton": "&&Oui",
+			"cancelButton": "Annuler"
+		},
+		"vs/workbench/services/dialogs/browser/remoteFileDialog": {
+			"remoteFileDialog.localFileFallback": "(Ouvrir un fichier sur ce poste )",
+			"remoteFileDialog.localFolderFallback": "(Ouvrir un dossier local)",
+			"remoteFileDialog.localFileFolderFallback": "(Ouvrir un fichier ou dossier local)",
+			"remoteFileDialog.localSaveFallback": "(Enregistrer le fichier local)",
 			"remoteFileDialog.notConnectedToRemote": "Le fournisseur de système de fichiers pour {0} n'est pas disponible.",
-			"remoteFileDialog.validateFolder": "The folder already exists. Please use a new file name.",
+			"remoteFileDialog.validateFolder": "Le dossier existe déjà. Utilisez un nouveau nom de fichier.",
 			"remoteFileDialog.validateExisting": "Le fichier {0} existe déjà. Êtes-vous sûr de vouloir le remplacer ?",
-			"remoteFileDialog.validateBadFilename": "Please enter a valid file name.",
-			"remoteFileDialog.validateNonexistentDir": "Please enter a path that exists.",
-			"remoteFileDialog.validateFileOnly": "Please select a file.",
-			"remoteFileDialog.validateFolderOnly": "Please select a folder."
+			"remoteFileDialog.validateBadFilename": "Entrez un nom de fichier valide.",
+			"remoteFileDialog.validateNonexistentDir": "Veuillez entrer un chemin d’accès qui existe.",
+			"remoteFileDialog.validateFileOnly": "Veuillez sélectionner un fichier.",
+			"remoteFileDialog.validateFolderOnly": "Veuillez sélectionner un dossier."
 		},
 		"vs/workbench/services/editor/browser/editorService": {
 			"sideBySideLabels": "{0} - {1}",
@@ -5260,9 +5380,10 @@
 		"vs/workbench/services/extensionManagement/node/multiExtensionManagement": {
 			"singleDependentError": "Impossible de désinstaller l'extension '{0}'. L'extension '{1}' en dépend.",
 			"twoDependentsError": "Impossible de désinstaller l'extension '{0}'. Les extensions '{1}' et '{2}' en dépendent.",
-			"multipleDependentsError": "Impossible de désinstaller l'extension '{0}'. Les extensions '{1}', '{2}' et d'autres extensions en dépendent."
+			"multipleDependentsError": "Impossible de désinstaller l'extension '{0}'. Les extensions '{1}', '{2}' et d'autres extensions en dépendent.",
+			"Manifest is not found": "L'installation de l'extension {0} a échoué : manifeste introuvable."
 		},
-		"vs/workbench/services/extensions/electron-browser/inactiveExtensionUrlHandler": {
+		"vs/workbench/services/extensions/common/inactiveExtensionUrlHandler": {
 			"confirmUrl": "Autoriser une extension à ouvrir cette URL ?",
 			"open": "&&Ouvrir",
 			"reloadAndHandle": "L'extension '{0}' n’est pas chargée. Souhaitez-vous recharger la fenêtre afin de charger l’extension et ouvrir l’URL ?",
@@ -5369,8 +5490,7 @@
 			"fileNotModifiedError": "Fichier non modifié depuis",
 			"fileBinaryError": "Il semble que le fichier soit binaire. Impossible de l'ouvrir en tant que texte",
 			"err.readonly": "Impossible de modifier la ressource.",
-			"err.create": "La création du fichier {0} a échoué",
-			"fileMoveConflict": "Déplacement/copie impossible. Le fichier existe déjà dans la destination."
+			"err.create": "La création du fichier {0} a échoué"
 		},
 		"vs/workbench/services/files/node/fileService": {
 			"netVersionError": "Microsoft .NET Framework 4.5 est obligatoire. Suivez le lien pour l'installer.",
@@ -5394,6 +5514,29 @@
 			"binFailed": "Échec du déplacement de '{0}' vers la corbeille",
 			"trashFailed": "Échec du déplacement de '{0}' vers la corbeille",
 			"deleteFailed": "Échec de suppression du dossier non vide '{0}'."
+		},
+		"vs/workbench/services/files2/common/fileService2": {
+			"invalidPath": "Le chemin d’accès de la ressource '{0}' doit être absolu",
+			"fileNotFoundError": "Fichier introuvable ({0})",
+			"fileExists": "Le fichier à créer existe déjà ({0})",
+			"err.create": "La création du fichier {0} a échoué",
+			"unableToMoveCopyError1": "Impossible d'effectuer un déplacement/une copie quand le chemin source est un chemin cible ou son parent",
+			"unableToMoveCopyError2": "Déplacement/copie impossible. Le fichier existe déjà dans la destination.",
+			"unableToMoveCopyError3": "Impossible de déplacer/copier. Le fichier remplace le dossier qui le contient.",
+			"mkdirExistsError": "{0} existe, mais n'est pas un répertoire",
+			"err.trash": "Le fournisseur ne prend pas en charge la corbeille.",
+			"deleteFailed": "Échec de suppression du dossier non vide '{0}'.",
+			"err.readonly": "Impossible de modifier la ressource."
+		},
+		"vs/workbench/services/files2/electron-browser/diskFileSystemProvider": {
+			"binFailed": "Échec du déplacement de '{0}' vers la corbeille",
+			"trashFailed": "Échec du déplacement de '{0}' vers la corbeille"
+		},
+		"vs/workbench/services/files2/node/diskFileSystemProvider": {
+			"fileExists": "Le fichier existe déjà",
+			"fileNotExists": "Le fichier n'existe pas",
+			"moveError": "Impossible de déplacer '{0}' dans '{1}' ({2}).",
+			"copyError": "Impossible de copier '{0}' dans '{1}' ({2})."
 		},
 		"vs/workbench/services/integrity/node/integrityService": {
 			"integrity.prompt": "Votre installation de {0} semble être endommagée. Effectuez une réinstallation.",
@@ -5506,7 +5649,7 @@
 			"progress.title2": "[{0}]: {1}",
 			"cancel": "Annuler"
 		},
-		"vs/workbench/services/remote/electron-browser/remoteAgentServiceImpl": {
+		"vs/workbench/services/remote/common/abstractRemoteAgentService": {
 			"connectionError": "Echec de connexion sur l'extension à distance de l'agent d'hôte (Erreur: {0})"
 		},
 		"vs/workbench/services/textfile/common/textFileService": {
@@ -5661,7 +5804,7 @@
 		},
 		"vs/workbench/services/workspace/node/workspaceEditingService": {
 			"save": "Enregistrer",
-			"doNotSave": "Don't Save",
+			"doNotSave": "Ne pas enregistrer",
 			"cancel": "Annuler",
 			"saveWorkspaceMessage": "Voulez-vous enregistrer la configuration de votre espace de travail dans un fichier ?",
 			"saveWorkspaceDetail": "Enregistrez votre espace de travail si vous avez l’intention de le rouvrir.",
